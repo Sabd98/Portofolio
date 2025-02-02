@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .nav_link {
+    @apply relative text-xl font-bold w-fit block after:block after:content-[''] after:absolute after:h-[3px]
+     after:bg-slate-600 text-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition-transform after:duration-300 after:origin-right;
+  }
+
+  .button {
+    @apply md:px-10 md:py-3 px-3 py-3 my-3 text-xl font-bold text-black bg-white drop-shadow-xl hover:bg-gray-200 duration-200 transition-all rounded-lg;
+  }
+
+  .icon {
+   @apply cursor-pointer lg:hidden 
+  }
+  .skill_card {
+    @apply bg-slate-100 rounded-xl text-center duration-300 transition-all cursor-pointer;
+   
+  }
+  
+ 
+  [id] {
+    scroll-margin-top: 15vh; /* Match your nav height */
+  }
+}
