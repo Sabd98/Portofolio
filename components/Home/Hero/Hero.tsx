@@ -1,5 +1,6 @@
 import { FadeInSectionLeft } from "@/components/Helper/FadeInSectionLeft";
 import { FadeInSectionRight } from "@/components/Helper/FadeInSectionRight";
+import { FadeInSectionY } from "@/components/Helper/FadeInSectionY";
 import { BaseInfo } from "@/Data/data";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { Button } from "@mui/material";
@@ -40,7 +41,7 @@ export const Hero = () => {
                 alt={BaseInfo.name}
                 width={500}
                 height={500}
-                className="rounded-[3rem] border-8 border-"
+                className="rounded-[3rem] border-8 "
               />
             </FadeInSectionRight>
           </div>
