@@ -10,7 +10,7 @@ export const About = () => {
         <div className="grid grid-cols-1 my-10 pb-6 lg:grid-cols-2 items-center gap-12">
           <FadeInSectionLeft>
             <h1 className="text-2x1 text-black font-semibold">
-              I am {aboutInfo.title}
+               {aboutInfo.title}
             </h1>
             <p className="mt-6 text-lg text-black text-opacity-60">
               {aboutInfo.description}

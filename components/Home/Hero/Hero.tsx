@@ -8,7 +8,7 @@ import Image from "next/image";
 
 export const Hero = () => {
   return (
-    <div className="min-h-[600px] mt-32 py-8 overflow-hidden bg-gray-100">
+    <div className="mt-16 py-8 overflow-hidden bg-gray-100">
       <div className=" w-4/5 mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center mb-10 gap-12">
           <FadeInSectionLeft>

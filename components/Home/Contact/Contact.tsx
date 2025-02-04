@@ -9,13 +9,13 @@ import React from "react";
 export const Contact = () => {
   return (
     <div className=" overflow-hidden bg-gray-100">
-      <div className="flex flex-col justify-center w-4/5 mx-auto">
+      <div className="flex flex-col justify-center w-3/5 mx-auto">
         <SectionHeading>My Contact</SectionHeading>
-        <div className="grid grid-cols-1 my-5 text-xl place-content-around gap-x-48 lg:grid-cols-2 items-center ">
+        <div className="grid grid-cols-1 text-nowrap  lg:grid-cols-2 my-5 text-xl gap-x-16">
           <FadeInSectionLeft>
             <h3 className="mt-8 flex text-black font-bold ">
             <Icon icon="logos:whatsapp-icon" width="25" height="25" />
-              <span className="ml-5">Phone/Whatsapp: {contactData.phone}</span>
+              <span className="ml-5">Whatsapp: {contactData.phone}</span>
             </h3>
             <h3 className="mt-8 flex text-black font-bold ">
             <Icon icon="ic:round-email" width="25" height="25" />
@@ -28,7 +28,7 @@ export const Contact = () => {
           </FadeInSectionLeft>
 
           <FadeInSectionRight>
-            <h3 className="mt-8 flex text-black font-bold ">
+            <h3 className="mt-8 flex font-bold ">
               <Icon icon="skill-icons:instagram" width="25" height="25" />
               <span className="ml-5">
                 Instagram:{" "}
