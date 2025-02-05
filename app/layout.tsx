@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Public_Sans } from "next/font/google";
 import { ResponsiveNav } from "@/components/Home/Navbar/ResponsiveNav";
 import "./globals.css";
+import "./global.scss";
 
 const font = Public_Sans({ 
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],

@@ -1,7 +1,5 @@
 import { navLinks } from "@/constant/constant";
 import { Icon } from "@iconify/react/dist/iconify.js";
-import { Button } from "@mui/material";
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -15,15 +13,15 @@ export const MobileNav = ({ showNav, closeNav }: Props) => {
   return (
     <>
       <div
-        className={`fixed ${navOpen} transform transition-all duration-500 inset-0 z-[1000] bg-black opacity-70 w-full h-screen`}
+        className={` ${navOpen} mobilenav_main`}
       >
         <div
-          className={`fixed ${navOpen} transform transition-all duration-500 delay-300 justify-center flex flex-col h-full  w-[80%] sm:w-[60%] bg-slate-800 space-x-6 z-[10000] mx-auto`}
+          className={` ${navOpen} mobilenav_layer`}
         >
           {navLinks.map((nav) => {
             return (
               <Link key={nav.id} href={nav.url}>
-                <p className="nav_link text-white text-[20px] ml-12 border-b-[1.5px] pb-2 border-gray-950 sm-text-[30px]">
+                <p className="nav_link text-slate-300 text-[20px] ml-12 border-b-[1.5px] pb-2 border-gray-950 sm-text-[30px]">
                   {nav.label}
                 </p>
               </Link>

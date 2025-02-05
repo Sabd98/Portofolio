@@ -2,11 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+/* @import "./global.scss"; */
+
 @layer components {
-  .nav_link {
-    @apply relative text-xl font-bold w-fit block after:block after:content-[''] after:absolute after:h-[3px]
-     after:bg-slate-600 text-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition-transform after:duration-300 after:origin-right;
-  }
+  /* .nav_link {
+    @apply relative text-xl font-bold w-fit block 
+           after:block after:content-[''] after:absolute after:h-[3px]
+           after:bg-slate-600 after:w-full after:scale-x-0 
+           after:transition-transform after:duration-300 after:origin-right;
+  
+    &:hover {
+      &::before {
+        content: '';
+        @apply absolute inset-0 -z-10; 
+        background: radial-gradient(
+          400px circle at var(--mouse-x) var(--mouse-y),
+          hsl(var(--color) / 1),
+          rgba(255, 255, 255, 0.12)
+        );
+      }
+  
+      &::after {
+        @apply scale-x-100 origin-left; 
+      }
+    }
+  } */
 
   .button {
     @apply md:px-10 md:py-3 px-3 py-3 my-3 text-xl font-bold text-black bg-white drop-shadow-xl hover:bg-gray-200 duration-200 transition-all rounded-lg;
@@ -20,6 +40,25 @@
    
   }
   
+  .nav_main {
+    @apply fixed h-[12vh] z-[10] bg-slate-50 w-full;
+  }
+
+  .nav_main > .nav_layer {
+    @apply flex items-center h-full justify-between w-[95%] sm:w-[90%] xl:w-[80%] mx-auto;
+  }
+
+  .nav_content {
+    @apply flex items-center;
+  }
+
+  .mobilenav_main {
+    @apply fixed transform transition-all duration-500 inset-0 z-[1000] bg-black opacity-70 w-full h-screen;
+  }
+
+  .mobilenav_layer {
+    @apply fixed transform transition-all duration-500 delay-300 justify-center flex flex-col h-full  w-[80%] sm:w-[60%] bg-slate-800 space-x-6 z-[10000] mx-auto;
+  }
  
   [id] {
     scroll-margin-top: 15vh; /* Match your nav height */

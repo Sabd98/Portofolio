@@ -11,6 +11,7 @@ type Props = {
 };
 
 export const Nav = ({ openNav }: Props) => {
+  
   const handleScroll = (
     e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
     hash: string
@@ -19,9 +20,11 @@ export const Nav = ({ openNav }: Props) => {
     const element = document.querySelector(hash);
     element?.scrollIntoView({ behavior: "smooth" });
   };
+
+  
   return (
-    <div className="fixed h-[12vh] z-[10] bg-slate-50 w-full">
-      <div className="flex items-center h-full justify-between w-[95%] sm:w-[90%] xl:w-[80%] mx-auto">
+    <div className="nav_main">
+      <div className="nav_layer ">
         <Image
           src="/images/next.svg"
           alt=""
@@ -29,7 +32,7 @@ export const Nav = ({ openNav }: Props) => {
           height={200}
           className="ml-3 sm:ml-0"
         />
-        <div className="flex items-center space-x-12">
+        <div className="nav_content  space-x-12">
           <div className="hidden items-center lg:flex space-x-8">
             {navLinks.map((nav) => {
               return (
@@ -45,7 +48,7 @@ export const Nav = ({ openNav }: Props) => {
           </div>
         </div>
 
-        <div className="flex items-center space-x-4">
+        <div className="nav_content space-x-4">
           <Link href={`https://www.linkedin.com/in/sabda-avicenna`}>
             <Button className="button">Link Me</Button>
           </Link>
