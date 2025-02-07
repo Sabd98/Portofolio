@@ -1,0 +1,7 @@
+.mobilenav_main {
+    @apply fixed transform transition-all duration-500 inset-0 z-[1000] bg-black opacity-70 w-full h-screen;
+  }
+
+  .mobilenav_layer {
+    @apply fixed transform transition-all duration-500 delay-300 justify-center flex flex-col h-full  w-[80%] sm:w-[60%] bg-slate-800 space-x-6 z-[10000] mx-auto;
+  }

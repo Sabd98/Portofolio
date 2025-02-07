@@ -1,0 +1,36 @@
+
+
+    .nav_link {
+      @apply relative text-xl font-bold w-fit block ;
+    
+      &::before {
+        content: "";
+        position: absolute;
+        top: var(--mouse-y, 50%);
+        left: var(--mouse-x, 50%);
+        width: 120px;
+        height: 120px;
+        background: radial-gradient(circle, rgba(0, 0, 0, 0.15) 0%, transparent 70%);
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        border-radius: 50%;
+        z-index: -1;
+      }
+    
+      &:hover::before {
+        opacity: 1;
+      }
+    }
+  
+    .nav_main {
+      @apply fixed h-[12vh] z-[10] bg-slate-50 w-full;
+
+      &>.nav_layer {
+        @apply flex items-center h-full justify-between w-[95%] sm:w-[90%] xl:w-[80%] mx-auto;
+      }
+    }
+  
+    .nav_content {
+      @apply flex items-center;
+    }
