@@ -1,0 +1,16 @@
+.contact {
+    @apply  overflow-hidden bg-gray-100;
+    &_layer {
+      @apply flex flex-col justify-center w-3/5 mx-auto;
+    }
+    &_container {
+      @apply grid grid-cols-1 text-nowrap  lg:grid-cols-2 my-5 text-xl gap-x-16;
+    }
+    &_label {
+        @apply mt-8 flex text-black font-bold;
+        &_link{
+            @apply hover:underline underline-offset-2;
+        }
+    }
+  }
+  

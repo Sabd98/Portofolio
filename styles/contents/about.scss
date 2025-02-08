@@ -1,0 +1,12 @@
+.about {
+  @apply  overflow-hidden bg-gray-100;
+  &_layer {
+    @apply flex flex-col justify-center w-4/5 mx-auto;
+  }
+  &_container {
+    @apply grid grid-cols-1 my-10 pb-6 lg:grid-cols-2  ;
+    &_img {
+      @apply hidden mx-auto lg:block overscroll-x-none  overflow-y-hidden;
+    }
+  }
+}

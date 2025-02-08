@@ -8,56 +8,57 @@ import React from "react";
 
 export const Contact = () => {
   return (
-    <div className=" overflow-hidden bg-gray-100">
-      <div className="flex flex-col justify-center w-3/5 mx-auto">
-        <SectionHeading>My Contact</SectionHeading>
-        <div className="grid grid-cols-1 text-nowrap  lg:grid-cols-2 my-5 text-xl gap-x-16">
+    <div className=" contact">
+              <SectionHeading>My Contact</SectionHeading>
+
+      <div className="contact_layer">
+        <div className="contact_container">
           <FadeInSectionLeft>
-            <h3 className="mt-8 flex text-black font-bold ">
+            <h3 className="contact_label ">
             <Icon icon="logos:whatsapp-icon" width="25" height="25" />
               <span className="ml-5">Whatsapp: {contactData.phone}</span>
             </h3>
-            <h3 className="mt-8 flex text-black font-bold ">
+            <h3 className="contact_label ">
             <Icon icon="ic:round-email" width="25" height="25" />
               <span className="ml-5">Email: {contactData.email}</span>
             </h3>
-            <h3 className="mt-8 flex text-black font-bold ">
+            <h3 className="contact_label ">
             <Icon  icon="mdi:address-marker" width="25" height="25" />
               <span className="ml-5">Address: {contactData.address}</span>
             </h3>
           </FadeInSectionLeft>
 
           <FadeInSectionRight>
-            <h3 className="mt-8 flex font-bold ">
+            <h3 className="contact_label ">
               <Icon icon="skill-icons:instagram" width="25" height="25" />
               <span className="ml-5">
                 Instagram:{" "}
                 <Link
-                  className="hover:underline underline-offset-2"
+                  className="contact_label_link"
                   href={`https://www.instagram.com/sabdavii`}
                 >
                   {contactData.instagram}
                 </Link>
               </span>
             </h3>
-            <h3 className="mt-8 flex text-black font-bold ">
+            <h3 className="contact_label ">
             <Icon icon="devicon:facebook" width="25" height="25" />
               <span className="ml-5">
                 Facebook:{" "}
                 <Link
-                  className="hover:underline underline-offset-2"
+                  className="contact_label_link"
                   href={`hhttps://www.facebook.com/sabda.avicenna.7`}
                 >
                   {contactData.facebook}
                 </Link>
               </span>
             </h3>
-            <h3 className="mt-8 flex text-black font-bold ">
+            <h3 className="contact_label ">
             <Icon icon="hugeicons:job-share" width="25" height="25" />
               <span className="ml-5">
                 Jobstreet:{" "}
                 <Link
-                  className="hover:underline underline-offset-2"
+                  className="contact_label_link"
                   href={`https://id.jobstreet.com/id/profile/sabda-avicenna-5x1zvKcWcF`}
                 >
                   {contactData.jobstreet}

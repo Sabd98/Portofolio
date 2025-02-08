@@ -8,17 +8,17 @@ import Image from "next/image";
 
 export const Hero = () => {
   return (
-    <div className="mt-16 py-8 overflow-hidden bg-gray-100">
-      <div className=" w-4/5 mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 items-center mb-10 gap-12">
+    <div className="hero">
+      <div className="hero_layer">
+        <div className="hero_container">
           <FadeInSectionLeft>
-            <h1 className="text-2x1 text-black font-semibold">
+            <h1>
               {BaseInfo.name}
             </h1>
-            <h1 className="text-3x1 text-bg text-black font-bold">
+            <h1>
               {BaseInfo.position}
             </h1>
-            <p className="mt-6 text-lg text-black text-opacity-60">
+            <p>
               {BaseInfo.description}
             </p>
             <a href="/myCV.pdf" download="Sabda_Avicenna_CV_Eng.pdf">
@@ -34,7 +34,7 @@ export const Hero = () => {
             </a>
           </FadeInSectionLeft>
 
-          <div className="hidden mx-auto lg:block overscroll-x-none  overflow-y-hidden">
+          <div className="hero_container_img">
             <FadeInSectionRight>
               <Image
                 src={BaseInfo.profilePic}

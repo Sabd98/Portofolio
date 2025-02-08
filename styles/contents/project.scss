@@ -1,0 +1,16 @@
+.project {
+    @apply  overflow-hidden bg-gray-100;
+   
+    &_container {
+      @apply grid grid-cols-1 w-1/2 mx-auto mt-10 lg:grid-cols-2 items-center gap-10 gap-x-56 ;
+      
+    }
+
+    &_card {
+        @apply mb-16 p-2 rounded-xl duration-500 transition-all ;
+        &:hover{
+           @apply scale-125; 
+        }
+      }
+  }
+  
