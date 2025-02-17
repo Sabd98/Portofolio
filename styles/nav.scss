@@ -1,7 +1,7 @@
 
 
     .nav_link {
-      @apply relative text-xl font-bold w-fit block ;
+      @apply relative text-xl font-bold w-fit  h-fit block ;
     
       &::before {
         content: "";

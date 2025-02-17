@@ -25,13 +25,7 @@ export const Nav = ({ openNav }: Props) => {
   return (
     <div className="nav_main">
       <div className="nav_layer ">
-        <Image
-          src="/images/next.svg"
-          alt=""
-          width={200}
-          height={200}
-          className="ml-3 sm:ml-0"
-        />
+        <h1>SABDA'S WEB</h1>
         <div className="nav_content  space-x-12">
           <div className="hidden items-center lg:flex space-x-8">
             {navLinks.map((nav) => {

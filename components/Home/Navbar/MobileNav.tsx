@@ -12,12 +12,8 @@ export const MobileNav = ({ showNav, closeNav }: Props) => {
   const navOpen = showNav ? "translate-x-0" : "translate-x-[-100%]";
   return (
     <>
-      <div
-        className={` ${navOpen} mobilenav_main`}
-      >
-        <div
-          className={` ${navOpen} mobilenav_layer`}
-        >
+      <div className={` ${navOpen} mobilenav_main`}>
+        <div className={` ${navOpen} mobilenav_layer`}>
           {navLinks.map((nav) => {
             return (
               <Link key={nav.id} href={nav.url}>
