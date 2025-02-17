@@ -25,7 +25,7 @@ export const Nav = ({ openNav }: Props) => {
   return (
     <div className="nav_main">
       <div className="nav_layer ">
-        <h1>SABDA'S WEB</h1>
+        <h1>MY WEB</h1>
         <div className="nav_content  space-x-12">
           <div className="hidden items-center lg:flex space-x-8">
             {navLinks.map((nav) => {
