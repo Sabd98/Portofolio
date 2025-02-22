@@ -32,8 +32,8 @@ export const Nav = ({ openNav }: Props) => {
           height={200}
           className="ml-3 sm:ml-0"
         />
-        <div className="nav_content  space-x-12">
-          <div className="hidden items-center lg:flex space-x-8">
+        <div className="nav_content">
+          <div className="hidden items-center lg:flex space-x-32">
             {navLinks.map((nav) => {
               return (
                 <Link

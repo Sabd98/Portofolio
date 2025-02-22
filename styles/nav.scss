@@ -24,7 +24,7 @@
     }
   
     .nav_main {
-      @apply fixed h-[12vh] z-[10] bg-slate-50 w-full;
+      @apply fixed h-[10vh] z-[10] bg-slate-50 w-full;
 
       &>.nav_layer {
         @apply flex items-center h-full justify-between w-[95%] sm:w-[90%] xl:w-[80%] mx-auto;
