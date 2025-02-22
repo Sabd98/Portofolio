@@ -32,7 +32,7 @@ export const SkillCard = ({ skill }: Props) => {
           height={80}
           className="object-contain mx-auto"
         />
-        <h1 className="text-2xl text-black font-semibold">{title}</h1>
+        <h1 className="text-2xl dark:text-white font-semibold">{title}</h1>
         <p className="skill_label">{percent}</p>
       </motion.div>
 

@@ -9,21 +9,21 @@ import React from "react";
 export const Contact = () => {
   return (
     <div className=" contact">
-              <SectionHeading>My Contact</SectionHeading>
+      <SectionHeading>My Contact</SectionHeading>
 
       <div className="contact_layer">
         <div className="contact_container">
           <FadeInSectionLeft>
             <h3 className="contact_label ">
-            <Icon icon="logos:whatsapp-icon" width="25" height="25" />
+              <Icon icon="logos:whatsapp-icon" width="25" height="25" />
               <span className="ml-5">Whatsapp: {contactData.phone}</span>
             </h3>
             <h3 className="contact_label ">
-            <Icon icon="ic:round-email" width="25" height="25" />
+              <Icon icon="ic:round-email" className="flex-shrink-0" width="25" height="25" />
               <span className="ml-5">Email: {contactData.email}</span>
             </h3>
             <h3 className="contact_label ">
-            <Icon  icon="mdi:address-marker" width="25" height="25" />
+              <Icon icon="mdi:address-marker" className="flex-shrink-0" width="25" height="25" />
               <span className="ml-5">Address: {contactData.address}</span>
             </h3>
           </FadeInSectionLeft>
@@ -42,7 +42,7 @@ export const Contact = () => {
               </span>
             </h3>
             <h3 className="contact_label ">
-            <Icon icon="devicon:facebook" width="25" height="25" />
+              <Icon icon="devicon:facebook" width="25" height="25" />
               <span className="ml-5">
                 Facebook:{" "}
                 <Link
@@ -54,7 +54,7 @@ export const Contact = () => {
               </span>
             </h3>
             <h3 className="contact_label ">
-            <Icon icon="hugeicons:job-share" width="25" height="25" />
+              <Icon icon="hugeicons:job-share" width="25" height="25" />
               <span className="ml-5">
                 Jobstreet:{" "}
                 <Link

@@ -3,17 +3,23 @@
 @tailwind components;
 @tailwind utilities;
 
+/* @layer base{
+  body {
+    @apply dark;
+  }
+} */
+
 @layer components {
 
  h1 {
-  @apply  text-black font-bold;
+  @apply  dark:text-white font-bold;
  }
 
  p {
-  @apply mt-6 text-lg text-black text-opacity-60
+  @apply mt-6 text-lg dark:text-white text-opacity-60
  }
   .button {
-    @apply md:px-10 md:py-3 px-3 py-3 my-3 text-xl font-bold text-black bg-white drop-shadow-xl hover:bg-gray-200 duration-200 transition-all rounded-lg;
+    @apply md:px-10 md:py-3 px-3 py-3 my-3 text-xl font-bold text-black dark:text-white bg-white dark:bg-slate-900 drop-shadow-xl hover:bg-gray-200 dark:hover:bg-gray-600 duration-200 transition-all rounded-lg;
   }
 
   .icon {

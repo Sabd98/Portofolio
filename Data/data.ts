@@ -74,12 +74,15 @@ export const projectData = [
   {
     id: 1,
     image: "/images/p1.png",
-    url: "https://agency-opal-eight.vercel.app/",
+    url: "https://dice-simulator-nu.vercel.app/",
+    title: "Dice Simulator",
+    
   },
   {
     id: 2,
     image: "/images/p2.png",
-    url: "https://burger-pearl.vercel.app/",
+    url: "https://note-keeper-r5zu172ps-sabd98s-projects.vercel.app/",
+    title: "Note Keeper",
   }
 ];
 

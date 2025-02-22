@@ -1,5 +1,5 @@
 .about {
-  @apply  overflow-hidden bg-gray-100;
+  @apply  overflow-hidden bg-gray-100 dark:bg-gray-800;
   &_layer {
     @apply flex flex-col justify-center w-4/5 mx-auto;
   }

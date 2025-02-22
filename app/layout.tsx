@@ -9,11 +9,12 @@ import "../styles/contents/about.scss";
 import "../styles/contents/project.scss";
 import "../styles/contents/skills.scss";
 import "../styles/contents/contact.scss";
+import { ThemeProvider } from "@/components/Helper/ThemeContext";
 
-
-const font = Public_Sans({ 
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
-  subsets: ["latin-ext"] });
+const font = Public_Sans({
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  subsets: ["latin-ext"],
+});
 
 export const metadata: Metadata = {
   title: "Sabda's Portofolio",
@@ -26,10 +27,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" 
+    >
       <body className={font.className}>
-        <ResponsiveNav />
-        {children}
+        <ThemeProvider>
+          <ResponsiveNav />
+          {children}
+        </ThemeProvider>{" "}
       </body>
     </html>
   );

@@ -1,22 +1,22 @@
 .skill {
-  @apply py-2 bg-gray-100;
+  @apply py-2 bg-gray-100 dark:bg-gray-800;
 
   &_container {
     @apply grid grid-cols-2 w-4/5 mx-auto mt-10 mb-5 lg:grid-cols-5 items-center gap-6;
   }
 
   &_card {
-        @apply bg-slate-100 rounded-xl text-center duration-300 transition-all cursor-pointer relative w-52 h-52 ;
+        @apply bg-slate-100  dark:bg-slate-800 rounded-xl text-center duration-300 transition-all cursor-pointer relative w-52 h-52 ;
         &_front{
-            @apply absolute w-52 h-52 bg-slate-100 p-4 rounded-xl;
+            @apply absolute w-52 h-52 bg-slate-100  dark:bg-slate-800 p-4 rounded-xl;
             
         }
         &_back{
-            @apply absolute w-52 h-52 bg-slate-200 text-gray-400 p-4 rounded-xl flex flex-col items-center justify-center
+            @apply absolute w-52 h-52 bg-slate-200 dark:bg-slate-700 text-gray-700 dark:text-gray-100 p-4 rounded-xl flex flex-col items-center justify-center
         }
   }
 
   &_label{
-    @apply m-4 p-2 rounded-lg drop-shadow-md text-xl bg-gray-200 text-black font-bold opacity-60
+    @apply m-4 p-2 rounded-lg drop-shadow-md text-xl bg-gray-200 dark:bg-gray-700 dark:text-white font-bold opacity-60
   }
 }

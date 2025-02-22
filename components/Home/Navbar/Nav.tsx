@@ -1,17 +1,17 @@
 "use client";
 
+import { useTheme } from "@/components/Helper/ThemeContext";
 import { navLinks } from "@/constant/constant";
 import { Icon } from "@iconify/react/dist/iconify.js";
-import { Button } from "@mui/material";
-import Image from "next/image";
+import { Button, FormControlLabel, Switch } from "@mui/material";
 import Link from "next/link";
+import { useState } from "react";
 
 type Props = {
   openNav: () => void;
 };
 
 export const Nav = ({ openNav }: Props) => {
-  
   const handleScroll = (
     e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
     hash: string
@@ -20,21 +20,20 @@ export const Nav = ({ openNav }: Props) => {
     const element = document.querySelector(hash);
     element?.scrollIntoView({ behavior: "smooth" });
   };
+  const { theme, toggleTheme } = useTheme();
 
-  
+  // const [theme, setTheme] = useState("");
+  // const themeToggle = () => {
+  //   const newSortOrder = theme === "" ? "dark" : "";
+  //   setTheme(newSortOrder);
+  // };
   return (
     <div className="nav_main">
       <div className="nav_layer ">
-        <Image
-          src="/images/next.svg"
-          alt=""
-          width={200}
-          height={200}
-          className="ml-3 sm:ml-0"
-        />
-        <div className="nav_content">
-          <div className="hidden items-center lg:flex space-x-32">
-            {navLinks.map((nav) => {
+        <h1 className="text-5xl">MY WEB</h1>
+        <div className="nav_content  space-x-12">
+        <div className="hidden items-center h-fit lg:flex flex-1 justify-center space-x-8">
+        {navLinks.map((nav) => {
               return (
                 <Link
                   key={nav.id}
@@ -59,7 +58,19 @@ export const Nav = ({ openNav }: Props) => {
             height="24"
             className="icon"
           />
+          <FormControlLabel
+            control={
+              <Switch
+                checked={theme === "dark"}
+                onChange={toggleTheme}
+                sx={{ m: 1 }}
+              />
+            }
+            className="font-semibold dark:text-slate-50"
+            label="Light Dark"
+          />
         </div>
+        
       </div>
     </div>
   );
