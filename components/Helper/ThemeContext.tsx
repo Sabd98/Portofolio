@@ -9,27 +9,27 @@ type ThemeContextType = {
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const [theme, setTheme] = useState(() => {
-    // Inisialisasi awal dari localStorage
-    if (typeof window !== 'undefined') {
-      const savedTheme = localStorage.getItem('theme');
-      return savedTheme || '';
-    }
-    return ''; // Fallback untuk SSR
-  });
-
+const [mounted, setMounted] = useState(false);
+  const [theme, setTheme] = useState(''); // Default value for SSR
+  
   useEffect(() => {
-    // Simpan ke localStorage
-    localStorage.setItem('theme', theme);
-    
-    // Update class di HTML element
-    document.documentElement.className = theme;
-  }, [theme]);
+    // Client-side only code
+    const savedTheme = localStorage.getItem('theme') || '';
+    setTheme(savedTheme);
+    setMounted(true);
+  }, []);
 
   const toggleTheme = () => {
-    setTheme((prev) => (prev === "" ? "dark" : ""));
+    const newTheme = theme === '' ? 'dark' : '';
+    setTheme(newTheme);
+    localStorage.setItem('theme', newTheme);
+    document.documentElement.className = newTheme;
   };
 
+  // if (!mounted) {
+  //   // Return empty div during SSR to match client initial render
+  //   return <div className={theme} ></div>;
+  // }
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       {children}

@@ -59,16 +59,16 @@ export const Nav = ({ openNav }: Props) => {
             className="icon"
           />
           <FormControlLabel
-            control={
-              <Switch
-                checked={theme === "dark"}
-                onChange={toggleTheme}
-                sx={{ m: 1 }}
-              />
-            }
-            className="font-semibold dark:text-slate-50"
-            label="Light Dark"
-          />
+          control={
+            <Switch
+              checked={theme === 'dark'}
+              onChange={toggleTheme}
+              sx={{ m: 1 }}
+            />
+          }
+          className="font-semibold dark:text-slate-50"
+          label={theme === 'dark' ? 'Dark' : 'Light'}
+        />
         </div>
         
       </div>
