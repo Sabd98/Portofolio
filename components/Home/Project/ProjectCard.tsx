@@ -18,7 +18,7 @@ export const ProjectCard = ({project}: Props) => {
   return (
     <div className="project_card">
     <Link href={url} target="_blank">
-       <Image src={image} alt="project" width={200} height={200} className="w-full mb-2"/>
+       <Image src={image} alt="project" width={500} height={300} className=" mb-2"/>
        <h1 className="text-2xl dark:text-white font-semibold text-center">{title}</h1>
     </Link>
    </div>

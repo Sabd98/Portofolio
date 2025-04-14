@@ -16,74 +16,43 @@ export const aboutInfo = {
   website: "100+",
 };
 
-//   {
-//     id: 1,
-//     title: " Web Applications",
-//     description: "Tailored web apps built with the latest technologies.",
-//     icon: "/images/s1.png",
-//   },
-//   {
-//     id: 2,
-//     title: "E-commerce Websites",
-//     description:
-//       "Secure online stores with user-friendly shopping and payments.",
-//     icon: "/images/s2.png",
-//   },
-//   {
-//     id: 3,
-//     title: "API Integration",
-//     description:
-//       "Seamless integration for smooth data sharing and functionality.",
-//     icon: "/images/s3.png",
-//   },
-//   {
-//     id: 4,
-//     title: "User Interfaces",
-//     description:
-//       "Engaging, responsive front-end designs for better user experiences.",
-//     icon: "/images/s4.png",
-//   },
-//   {
-//     id: 5,
-//     title: "Database Solutions",
-//     description:
-//       "Efficient and scalable database management for your data needs.",
-//     icon: "/images/s5.png",
-//   },
-//   {
-//     id: 6,
-//     title: "Real-Time Features",
-//     description: "Add live chat, notifications, and real-time data updates.",
-//     icon: "/images/s6.png",
-//   },
-//   {
-//     id: 7,
-//     title: "Speed Optimization",
-//     description: "Boost performance with faster load times and optimization.",
-//     icon: "/images/s7.png",
-//   },
-//   {
-//     id: 8,
-//     title: "Website Management",
-//     description: "Easy content management systems with flexible controls.",
-//     icon: "/images/s8.png",
-//   },
-// ];
-
 export const projectData = [
   {
     id: 1,
     image: "/images/p1.png",
     url: "https://dice-simulator-nu.vercel.app/",
     title: "Dice Simulator",
-    
   },
   {
     id: 2,
     image: "/images/p2.png",
-    url: "https://note-keeper-r5zu172ps-sabd98s-projects.vercel.app/",
+    url: "https://note-keeper-gules.vercel.app/",
     title: "Note Keeper",
-  }
+  },
+  {
+    id: 3,
+    image: "/images/p3.png",
+    url: "https://test-tic-tac-toe-one.vercel.app/",
+    title: "Test Tic-Tac-Toe",
+  },
+  {
+    id: 4,
+    image: "/images/p4.png",
+    url: "https://my-calcuvest.vercel.app/",
+    title: "Calcuvest",
+  },
+  {
+    id: 5,
+    image: "/images/p5.png",
+    url: "https://fe-procheck.vercel.app/",
+    title: "Procheck",
+  },
+  {
+    id: 6,
+    image: "/images/p6.png",
+    url: "https://quizlet-fe-sooty.vercel.app/",
+    title: "Quizlet",
+  },
 ];
 
 export const skillsData = [
@@ -92,7 +61,6 @@ export const skillsData = [
     title: "HTML",
     image: "/images/html.svg",
     percent: "90%",
-   
   },
   {
     id: 2,
@@ -104,7 +72,7 @@ export const skillsData = [
     id: 3,
     title: "JavaScript",
     image: "/images/js.svg",
-    percent: "70%",
+    percent: "75%",
   },
   {
     id: 4,
@@ -116,13 +84,13 @@ export const skillsData = [
     id: 5,
     title: "React",
     image: "/images/react.svg",
-    percent: "65%",
+    percent: "70%",
   },
   {
     id: 6,
     title: "Node JS",
     image: "/images/node.svg",
-    percent: "43%",
+    percent: "55%",
   },
   {
     id: 7,
@@ -138,15 +106,27 @@ export const skillsData = [
   },
   {
     id: 9,
+    title: "MongoDB",
+    image: "/images/mongo.svg",
+    percent: "45%",
+  },
+  {
+    id: 10,
+    title: "PHP",
+    image: "/images/php.svg",
+    percent: "25%",
+  },
+  {
+    id: 11,
     title: "Tailwind",
     image: "/images/tailwind.svg",
     percent: "51%",
   },
   {
-    id: 10,
+    id: 12,
     title: "Vue",
     image: "/images/vue.svg",
-    percent: "10%",
+    percent: "20%",
   },
 ];
 
