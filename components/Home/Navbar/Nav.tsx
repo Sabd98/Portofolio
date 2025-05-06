@@ -5,7 +5,6 @@ import { navLinks } from "@/constant/constant";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { Button, FormControlLabel, Switch } from "@mui/material";
 import Link from "next/link";
-import { useState } from "react";
 
 type Props = {
   openNav: () => void;
@@ -32,8 +31,8 @@ export const Nav = ({ openNav }: Props) => {
       <div className="nav_layer ">
         <h1 className="text-5xl">MY WEB</h1>
         <div className="nav_content  space-x-12">
-        <div className="hidden items-center h-fit lg:flex flex-1 justify-center space-x-8">
-        {navLinks.map((nav) => {
+          <div className="hidden items-center h-fit lg:flex flex-1 justify-center space-x-8">
+            {navLinks.map((nav) => {
               return (
                 <Link
                   key={nav.id}
@@ -49,7 +48,10 @@ export const Nav = ({ openNav }: Props) => {
 
         <div className="nav_content space-x-4">
           <Link href={`https://www.linkedin.com/in/sabda-avicenna`}>
-            <Button className="button">Link Me</Button>
+            <Button className="button gap-2">
+              <Icon icon="devicon:linkedin" width="25" height="25" />
+              <span> Link Me</span>
+            </Button>
           </Link>
           <Icon
             onClick={openNav}
@@ -59,18 +61,17 @@ export const Nav = ({ openNav }: Props) => {
             className="icon"
           />
           <FormControlLabel
-          control={
-            <Switch
-              checked={theme === 'dark'}
-              onChange={toggleTheme}
-              sx={{ m: 1 }}
-            />
-          }
-          className="font-semibold dark:text-slate-50"
-          label={theme === 'dark' ? 'Dark' : 'Light'}
-        />
+            control={
+              <Switch
+                checked={theme === "dark"}
+                onChange={toggleTheme}
+                sx={{ m: 1 }}
+              />
+            }
+            className="font-semibold dark:text-slate-50"
+            label={theme === "dark" ? "Dark" : "Light"}
+          />
         </div>
-        
       </div>
     </div>
   );

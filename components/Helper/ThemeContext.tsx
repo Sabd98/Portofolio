@@ -23,13 +23,9 @@ const [mounted, setMounted] = useState(false);
     const newTheme = theme === '' ? 'dark' : '';
     setTheme(newTheme);
     localStorage.setItem('theme', newTheme);
-    document.documentElement.className = newTheme;
+    document.body.className = newTheme;
   };
 
-  // if (!mounted) {
-  //   // Return empty div during SSR to match client initial render
-  //   return <div className={theme} ></div>;
-  // }
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       {children}

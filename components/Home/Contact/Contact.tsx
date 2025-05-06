@@ -19,11 +19,21 @@ export const Contact = () => {
               <span className="ml-5">Whatsapp: {contactData.phone}</span>
             </h3>
             <h3 className="contact_label ">
-              <Icon icon="ic:round-email" className="flex-shrink-0" width="25" height="25" />
+              <Icon
+                icon="ic:round-email"
+                className="flex-shrink-0"
+                width="25"
+                height="25"
+              />
               <span className="ml-5">Email: {contactData.email}</span>
             </h3>
             <h3 className="contact_label ">
-              <Icon icon="mdi:address-marker" className="flex-shrink-0" width="25" height="25" />
+              <Icon
+                icon="mdi:address-marker"
+                className="flex-shrink-0"
+                width="25"
+                height="25"
+              />
               <span className="ml-5">Address: {contactData.address}</span>
             </h3>
           </FadeInSectionLeft>
@@ -54,14 +64,14 @@ export const Contact = () => {
               </span>
             </h3>
             <h3 className="contact_label ">
-              <Icon icon="hugeicons:job-share" width="25" height="25" />
+              <Icon icon="devicon:github" width="25" height="25" />
               <span className="ml-5">
-                Jobstreet:{" "}
+                Github:{" "}
                 <Link
                   className="contact_label_link"
-                  href={`https://id.jobstreet.com/id/profile/sabda-avicenna-5x1zvKcWcF`}
+                  href={`https://github.com/Sabd98`}
                 >
-                  {contactData.jobstreet}
+                  {contactData.linkedin}
                 </Link>
               </span>
             </h3>

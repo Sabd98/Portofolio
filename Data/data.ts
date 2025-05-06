@@ -1,6 +1,6 @@
 export const BaseInfo = {
   name: "Sabda Avicenna",
-  position: "Front End Web Developer",
+  position: "Fullstack Web Developer",
   description:
     "Hi Visitor, Welcome to My Web Portofolio's. Let's enjoy my works!😊 ",
   profilePic: "/images/mySelf.jpg",
@@ -9,7 +9,21 @@ export const BaseInfo = {
 export const aboutInfo = {
   title: "Web Developer Enthusiast",
   description:
-    "Passionate about IT technology, especially web development.Have advantages in front-end skills, sometimes work on projects that rely on fullstack or back-end skill. I have a special and unique background that you can check on my CV.",
+    "Passionate about IT technology, especially web development.Have advantages in front-end and fullstack skills. I have a special and unique background that you can check on my CV.",
+  job_histories: [
+    {
+      id: 1,
+      corpName: "IndoCyber Global Technology",
+      job: "Backend Developer Bootcamp Contestant",
+      desc: "Guaranteed Bootcamp Based on .NET Framework",
+    },
+    {
+      id: 2,
+      corpName: "PT Poly Jaya Medical",
+      job: "Fullstack Developer",
+      desc: "Being IT Support on Software of Plane and Racing Simulator with C# GUI and HIS Web Software with Next.js + Node.js+ PostgreSQL. Being Fullstack Developer on Monitoring Incubator Web App (React.js+Node+js+Mysql) Project",
+    },
+  ],
 };
 
 export const projectData = [
@@ -47,7 +61,13 @@ export const projectData = [
     id: 6,
     image: "/images/p6.png",
     url: "https://quizview-fe-sooty.vercel.app/",
-    title: "Quizlet",
+    title: "QuizView",
+  },
+  {
+    id: 7,
+    image: "/images/p7.png",
+    url: "https://my-blog-sigma-olive.vercel.app/",
+    title: "MyBlog",
   },
 ];
 
@@ -92,7 +112,7 @@ export const skillsData = [
     id: 7,
     title: "MySQL",
     image: "/images/mysql.svg",
-    percent: "51%",
+    percent: "55%",
   },
   {
     id: 8,
@@ -133,5 +153,5 @@ export const contactData = {
   address: "South Tangerang, Banten",
   instagram: "@sabdavii",
   facebook: "Sabda Avicenna",
-  jobstreet: "Sabda Avicenna"
+  linkedin: "Sabd98"
 };
