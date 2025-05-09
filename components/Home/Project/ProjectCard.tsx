@@ -19,8 +19,8 @@ export const ProjectCard = ({ project }: Props) => {
         <Image
           src={image}
           alt="project"
-          width={500}
-          height={300}
+          width={800}
+          height={800}
           className=" mb-2"
         />
         <h1 className="text-2xl dark:text-white font-semibold text-center">

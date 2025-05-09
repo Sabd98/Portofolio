@@ -18,13 +18,13 @@ export const About = () => {
             <h1 className="mb-1">Career&apos;s Roadmap</h1>
             {aboutInfo?.job_histories.map((job) => {
               return (
-                <ul key={job.id} className="text-2xl mb-3 flex">
-                  <p>{job.id}.&nbsp;</p>
-                  <p>
-                    <li>Corp: {job.corpName}</li>
-                    <li>Position: {job.job}</li>
-                    <li className="text-balance">Description: {job.desc}</li>
-                  </p>
+                <ul key={job.id} className="text-2xl mb-3 flex dark:text-white">
+                  <li>{job.id}.&nbsp;</li>
+                  <li>
+                    <span>Corp: {job.corpName}</span>
+                    <span>Position: {job.job}</span>
+                    <span className="text-balance">Description: {job.desc}</span>
+                  </li>
                 </ul>
               );
             })}

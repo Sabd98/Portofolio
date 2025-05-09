@@ -2,7 +2,7 @@
   @apply py-2 bg-gray-100 dark:bg-gray-800;
 
   &_container {
-    @apply grid grid-cols-2 w-4/5 mx-auto mt-5 mb-3 lg:grid-cols-4 items-center gap-6;
+    @apply grid grid-cols-2 w-full mx-auto mt-5 mb-3 lg:grid-cols-4 items-center gap-6;
   }
 
   &_card {

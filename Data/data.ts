@@ -69,6 +69,12 @@ export const projectData = [
     url: "https://my-blog-sigma-olive.vercel.app/",
     title: "MyBlog",
   },
+  {
+    id: 8,
+    image: "/images/p8.png",
+    url: "https://standget.vercel.app/",
+    title: "StandGet",
+  },
 ];
 
 export const skillsData = [
