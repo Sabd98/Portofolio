@@ -4,6 +4,7 @@ import { useTheme } from "@/components/Helper/ThemeContext";
 import { navLinks } from "@/constant/constant";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { Button, FormControlLabel, Switch } from "@mui/material";
+import { div } from "framer-motion/client";
 import Link from "next/link";
 
 type Props = {
@@ -34,13 +35,14 @@ export const Nav = ({ openNav }: Props) => {
           <div className="hidden items-center h-fit lg:flex flex-1 justify-center space-x-8">
             {navLinks.map((nav) => {
               return (
-                <Link
-                  key={nav.id}
-                  href={nav.url}
-                  onClick={(e) => handleScroll(e, nav.url)}
-                >
-                  <p className="nav_link">{nav.label}</p>
-                </Link>
+                <div className="pb-4" key={nav.id}>
+                  <Link
+                    href={nav.url}
+                    onClick={(e) => handleScroll(e, nav.url)}
+                  >
+                    <p className="nav_link">{nav.label}</p>
+                  </Link>
+                </div>
               );
             })}
           </div>

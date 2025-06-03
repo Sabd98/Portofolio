@@ -14,16 +14,16 @@ type Props = {
 export const ProjectCard = ({ project }: Props) => {
   const { url, image, title } = project;
   return (
-    <div className="project_card">
+    <div className="project_card  mb-0">
       <Link href={url} target="_blank">
         <Image
           src={image}
           alt="project"
           width={800}
           height={800}
-          className=" mb-2"
+          className=" mb-0"
         />
-        <h1 className="text-2xl dark:text-white font-semibold text-center">
+        <h1 className="text-xl dark:text-white font-semibold text-center">
           {title}
         </h1>
       </Link>

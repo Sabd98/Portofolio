@@ -7,7 +7,7 @@
     }
 
     &_card {
-        @apply mb-16 p-2 rounded-xl duration-500 transition-all ;
+        @apply p-2 rounded-xl duration-500 transition-all ;
         &:hover{
            @apply scale-125; 
         }
