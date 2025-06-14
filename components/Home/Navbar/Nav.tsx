@@ -4,7 +4,6 @@ import { useTheme } from "@/components/Helper/ThemeContext";
 import { navLinks } from "@/constant/constant";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { Button, FormControlLabel, Switch } from "@mui/material";
-import { div } from "framer-motion/client";
 import Link from "next/link";
 
 type Props = {

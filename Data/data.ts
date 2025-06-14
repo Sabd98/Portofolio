@@ -93,8 +93,8 @@ export const projectData = [
   {
     id: 10,
     image: "/images/p10.png",
-    url: "https://blog-genzet.vercel.app/",
-    source: "https://github.com/Sabd98/BLOG-GENZET",
+    url: "https://test-sellerpintar-alpha.vercel.app/",
+    source: "https://github.com/Sabd98/SellerpintarFETest",
     title: "BlogGenzet",
   },
   {
@@ -103,6 +103,13 @@ export const projectData = [
     url: "https://ulaman-clone.vercel.app/",
     source: "https://github.com/Sabd98/UlamanDuplicateFE",
     title: "UlamanDuplicate",
+  },
+  {
+    id: 12,
+    image: "/images/p12.png",
+    url: "https://nqwy5s-5173.csb.app/",
+    source: "https://github.com/Sabd98/attendance-charts",
+    title: "Attendance Charts",
   },
 ];
 
