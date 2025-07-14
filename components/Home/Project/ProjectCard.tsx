@@ -20,7 +20,8 @@ export const ProjectCard = ({ project }: Props) => {
           src={image}
           alt="project"
           width={800}
-          height={800}
+          height={400}
+          style={{ objectFit: "cover" }}
           className=" mb-0"
         />
         <h1 className="text-xl dark:text-white font-semibold text-center">
