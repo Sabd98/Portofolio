@@ -33,6 +33,7 @@ export const projectData = [
     url: "https://dice-simulator-nu.vercel.app/",
     source: "https://github.com/Sabd98/Dice_Simulator",
     title: "Dice Simulator",
+    techstacks: "Techstacks:Vanilla JS,Vite,Vanilla CSS",
   },
   {
     id: 2,
@@ -40,6 +41,7 @@ export const projectData = [
     url: "https://note-keeper-gules.vercel.app/",
     source: "https://github.com/Sabd98/KeeperApp",
     title: "Note Keeper",
+    techstacks: "Techstacks:React.js,Vite,Vanilla CSS",
   },
   {
     id: 3,
@@ -47,6 +49,7 @@ export const projectData = [
     url: "https://test-tic-tac-toe-one.vercel.app/",
     source: "https://github.com/Sabd98/tic-tac-toe",
     title: "Test Tic-Tac-Toe",
+    techstacks: "Techstacks:React.js,Vite,Vanilla CSS",
   },
   {
     id: 4,
@@ -54,6 +57,7 @@ export const projectData = [
     url: "https://my-calcuvest.vercel.app/",
     source: "https://github.com/Sabd98/Calcuvest",
     title: "Calcuvest",
+    techstacks: "Techstacks:React.js,Vite,Tailwind CSS",
   },
   {
     id: 5,
@@ -61,6 +65,8 @@ export const projectData = [
     url: "https://fe-procheck.vercel.app/",
     source: "https://github.com/Sabd98/procheck",
     title: "Procheck",
+    techstacks:
+      "Techstacks:React.js,Vite,Tailwind CSS,axios,Node.js,Express.js,MongoDB,Mongoose",
   },
   {
     id: 6,
@@ -68,6 +74,8 @@ export const projectData = [
     url: "https://quizview-fe-sooty.vercel.app/",
     source: "https://github.com/Sabd98/quizview",
     title: "QuizView",
+    techstacks:
+      "Techstacks:React.js,Vite,SASS,axios,Node.js,Express.js,MongoDB,Mongoose",
   },
   {
     id: 7,
@@ -75,6 +83,8 @@ export const projectData = [
     url: "https://my-blog-sigma-olive.vercel.app/",
     source: "https://github.com/Sabd98/MyBlog",
     title: "MyBlog",
+    techstacks:
+      "Techstacks:Vue.js,Vite,Tailwind CSS,axios,Node.js,Express.js,MongoDB,Mongoose",
   },
   {
     id: 8,
@@ -82,6 +92,8 @@ export const projectData = [
     url: "https://standget.vercel.app/",
     source: "https://github.com/Sabd98/StandGet",
     title: "StandGet",
+    techstacks:
+      "Techstacks:React.js,Redux,Typescript,Vite,Tailwind CSS,SASS,axios,Node.js,Express.js,Mysql,Sequelize,JWT",
   },
   {
     id: 9,
@@ -89,6 +101,8 @@ export const projectData = [
     url: "https://job-taker.vercel.app/",
     source: "https://github.com/Sabd98/job-taker",
     title: "JobTaker",
+    techstacks:
+      "Techstacks:Vue.js,Vuex,Vuetify,Vue transition,Vite,Tailwind CSS,axios,Node.js,Express.js,Mysql,Sequelize,JWT",
   },
   {
     id: 10,
@@ -96,6 +110,8 @@ export const projectData = [
     url: "https://test-sellerpintar-alpha.vercel.app/",
     source: "https://github.com/Sabd98/SellerpintarFETest",
     title: "BlogGenzet",
+    techstacks:
+      "Techstacks:Next.JS,React.JS,Cookie,Javascript,Tailwind CSS,Shadcn,zod,axios",
   },
   {
     id: 11,
@@ -103,20 +119,26 @@ export const projectData = [
     url: "https://ulaman-clone.vercel.app/",
     source: "https://github.com/Sabd98/UlamanDuplicateFE",
     title: "UlamanDuplicate",
+    techstacks:
+      "Techstacks:Next.JS,React.JS,framer-motion,Javascript,Tailwind CSS,axios",
   },
   {
     id: 12,
     image: "/images/p12.png",
-    url: "https://nqwy5s-5173.csb.app/",
+    url: "https://attendance-charts.vercel.app/",
     source: "https://github.com/Sabd98/attendance-charts",
     title: "Attendance Charts",
+    techstacks:
+      "Techstacks:React.JS,Vite,recharts,Javascript,Tailwind CSS,axios",
   },
   {
     id: 13,
     image: "/images/p13.png",
-    url: "https://github.com/Sabd98/indico-voucherku",
+    url: "https://voucherku.vercel.app/",
     source: "https://github.com/Sabd98/indico-voucherku",
     title: "voucherku",
+    techstacks:
+      "Techstacks:React.JS,Vite,golang gin,gorm,Javascript,Tailwind CSS,axios",
   },
   {
     id: 14,
@@ -124,6 +146,7 @@ export const projectData = [
     url: "https://github.com/Sabd98/e-request",
     source: "https://github.com/Sabd98/e-request",
     title: "E-Request",
+    techstacks: "Techstacks:bootstrapcss,blade,laravel,PHP,MySQL,MVC,Eloquent",
   },
   {
     id: 15,
@@ -131,13 +154,16 @@ export const projectData = [
     url: "https://github.com/Sabd98/payroll-api",
     source: "https://github.com/Sabd98/payroll-api",
     title: "Employee Payroll API",
+    techstacks: "Techstacks:node.js,Express.js,PostgreSQL,Sequelize,JWT,jest",
   },
   {
     id: 16,
-    image: "/images/p16.jpg",
-    url: "https://zodiac-profile.vercel.app/",
-    source: "https://github.com/Sabd98/zodiac-profile",
-    title: "Zodiac Profile",
+    image: "/images/p16.png",
+    url: "https://github.com/Sabd98/sp_fs_sabda_avicenna",
+    source: "https://github.com/Sabd98/sp_fs_sabda_avicenna",
+    title: "Procheck 2.0",
+    techstacks:
+      "Techstacks:Next.js,React.js,Typescript,Tailwind CSS,axios,Postgresql,JWT,chartjs,zustand,prisma,dnd,shadcn",
   },
   {
     id: 17,
@@ -145,6 +171,8 @@ export const projectData = [
     url: "https://github.com/Sabd98/coffee-scraper-app",
     source: "https://github.com/Sabd98/coffee-scraper-app",
     title: "Coffee Scraper App",
+    techstacks:
+      "Techstacks:Next.js,React.js,Typescript,Tailwind CSS,axios,Sequelize,PostgreSQL,echarts,playwright",
   },
   {
     id: 18,
@@ -152,6 +180,7 @@ export const projectData = [
     url: "https://crypto-market-test.vercel.app/",
     source: "https://github.com/Sabd98/crypto-market-test",
     title: "Crypto Market App",
+    techstacks: "Techstacks:React.js,Vite,Tailwind CSS,axios,recharts,SCSS",
   },
   {
     id: 19,
@@ -159,6 +188,8 @@ export const projectData = [
     url: "https://cusboard.vercel.app/",
     source: "https://github.com/Sabd98/customer-analytic-higo",
     title: "Cusboard",
+    techstacks:
+      "Techstacks:React.js,Next.js,Tailwind CSS,axios,recharts,Node.js,Express.js,MongoDB,Mongoose,node-cache,SWR",
   },
   {
     id: 20,
@@ -166,6 +197,26 @@ export const projectData = [
     url: "https://ecom-payment-weld.vercel.app/",
     source: "https://github.com/Sabd98/test-ecom-herca",
     title: "E-COM",
+    techstacks:
+      "Techstacks:React.js,Vite,Tailwind CSS,axios,Node.js,Express.js,postgreSQL,Sequelize",
+  },
+  {
+    id: 21,
+    image: "/images/p21.png",
+    url: "https://cms-admin-fawn.vercel.app/login",
+    source: "https://github.com/Sabd98/cms-dashboard-test",
+    title: "CMS Admin",
+    techstacks:
+      "Techstacks:React.js,Vite,Tailwind CSS,axios,Node.js,Express.js,Mysql,Sequelize",
+  },
+  {
+    id: 22,
+    image: "/images/p22.png",
+    url: "https://shopedia-peasy.vercel.app/",
+    source: "https://github.com/Sabd98/shopedia-peasyai-test",
+    title: "Shopedia",
+    techstacks:
+      "Techstacks:Vue.js,Vite,Typescript,sass,Tailwind CSS,axios,Pinia,Vuetify",
   },
 ];
 
@@ -196,7 +247,7 @@ export const skillsData = [
     source: "",
     title: "TypeScript",
     image: "/images/ts.svg",
-    percent: "50%",
+    percent: "60%",
   },
   {
     id: 5,
@@ -224,7 +275,7 @@ export const skillsData = [
     source: "",
     title: "PostgreSQL",
     image: "/images/postgresql.svg",
-    percent: "55%",
+    percent: "60%",
   },
   {
     id: 9,
@@ -245,14 +296,14 @@ export const skillsData = [
     source: "",
     title: "Tailwind",
     image: "/images/tailwind.svg",
-    percent: "60%",
+    percent: "70%",
   },
   {
     id: 12,
     source: "",
     title: "Vue",
     image: "/images/vue.svg",
-    percent: "50%",
+    percent: "60%",
   },
   {
     id: 13,
@@ -284,12 +335,11 @@ export const skillsData = [
   },
 ];
 
-
 export const contactData = {
   phone: "+6285894189223",
   email: "sabdaavicennaa@gmail.com",
   address: "South Tangerang, Banten",
   instagram: "@sabdavii",
   facebook: "Sabda Avicenna",
-  linkedin: "Sabd98"
+  linkedin: "Sabd98",
 };

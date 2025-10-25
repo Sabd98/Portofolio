@@ -17,6 +17,9 @@ export const Project = () => {
           {displayedProjects.map((project) => (
             <div key={project.id} className="text-center">
               <ProjectCard project={project} />
+              <h1 className="text-sm dark:text-white mt-2 px-4 break-words overflow-hidden">
+                {project.techstacks}
+              </h1>
               <div className="px-4 text-sm">
                 <Link
                   href={project.source}

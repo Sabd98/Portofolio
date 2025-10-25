@@ -21,11 +21,6 @@ export const Nav = ({ openNav }: Props) => {
   };
   const { theme, toggleTheme } = useTheme();
 
-  // const [theme, setTheme] = useState("");
-  // const themeToggle = () => {
-  //   const newSortOrder = theme === "" ? "dark" : "";
-  //   setTheme(newSortOrder);
-  // };
   return (
     <div className="nav_main">
       <div className="nav_layer ">
