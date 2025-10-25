@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -18,16 +17,52 @@
  p {
   @apply mt-6 text-lg dark:text-white text-opacity-60
  }
-  .button {
-    @apply md:px-10 md:py-3 px-3 py-3 my-3 text-xl font-bold text-black dark:text-white bg-white dark:bg-slate-900 drop-shadow-xl hover:bg-gray-200 dark:hover:bg-gray-600 duration-200 transition-all rounded-lg;
-  }
+ 
+ .button {
+  @apply md:px-10 md:py-3 px-3 py-3 my-3 text-xl font-bold text-black dark:text-white bg-white dark:bg-slate-900 drop-shadow-xl hover:bg-gray-200 dark:hover:bg-gray-600 duration-200 transition-all rounded-lg;
+  border: 2px solid rgb(209 213 219) !important; 
+  text-transform: none !important;
+}
 
+.button:hover {
+  border-color: rgb(156 163 175) !important; 
+}
+
+/* Dark mode */
+.dark .button {
+  border-color: rgb(75 85 99) !important; 
+}
+
+.dark .button:hover {
+  border-color: rgb(107 114 128) !important; 
+}
   .icon {
-   @apply cursor-pointer lg:hidden 
+   @apply cursor-pointer md:hidden 
   }
   
   
   [id] {
     scroll-margin-top: 15vh; /* Match your nav height */
+  }
+
+  /* Simple fix for navbar button vertical alignment */
+  .nav_content .button {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  /* Perfect alignment for navigation links */
+  .nav_link {
+    display: flex !important;
+    align-items: center !important;
+    line-height: 1 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Remove any unwanted spacing on nav container */
+  .lg\\:flex > div {
+    margin: 0 !important;
+    padding: 0 !important;
   }
 }

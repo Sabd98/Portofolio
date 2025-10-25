@@ -15,6 +15,9 @@ export const ProjectCard = ({ project }: Props) => {
   const { url, image, title } = project;
   return (
     <div className="project_card  mb-0">
+       <h1 className="text-xl dark:text-white font-semibold text-center mb-2">
+          {title}
+        </h1>
       <Link href={url} target="_blank">
         <Image
           src={image}
@@ -24,9 +27,7 @@ export const ProjectCard = ({ project }: Props) => {
           style={{ objectFit: "cover" }}
           className=" mb-0"
         />
-        <h1 className="text-xl dark:text-white font-semibold text-center">
-          {title}
-        </h1>
+       
       </Link>
     </div>
   );

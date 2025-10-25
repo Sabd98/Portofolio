@@ -1,11 +1,48 @@
 .mobilenav_main {
-    @apply fixed transform transition-all duration-500 inset-0 z-[1000] bg-black dark:bg-white opacity-70 w-full h-screen;
+    @apply fixed transform transition-all duration-500 z-[1000] w-[100%] h-screen left-0 top-0;
+    background: transparent;
   }
 
   .mobilenav_layer {
-    @apply fixed transform transition-all duration-500 delay-300 justify-center flex flex-col h-full  w-[80%] sm:w-[60%] bg-slate-800 dark:bg-slate-50 dark:text-slate-600 space-x-6 z-[10000] mx-auto;
+    @apply fixed transform transition-all duration-500 delay-300 flex flex-col h-full w-[50%] bg-slate-800/70 dark:bg-slate-50/70 dark:text-slate-600 z-[10000] left-0 top-0;
   }
 
   .mobilenav_label{
-    @apply  text-slate-300 dark:text-slate-700 text-[20px] ml-12 border-b-[1.5px] pb-2 border-gray-950 ;
+    @apply text-slate-300 dark:text-slate-700 text-[20px] sm:text-[24px] font-semibold px-8 py-5 border-b-[1px] border-gray-600 dark:border-gray-400 transition-colors duration-200 cursor-pointer;
+    
+    &:hover {
+      background: rgba(255, 255, 255, 0.05);
+      color: rgba(255, 255, 255, 0.9);
+    }
+  }
+
+  /* Dark mode hover for navigation labels */
+  .dark .mobilenav_label:hover {
+    background: rgba(0, 0, 0, 0.05);
+    color: rgba(71, 85, 105, 0.9);
+  }
+
+  /* Close button styling */
+  .mobilenav_close {
+    @apply cursor-pointer absolute top-4 right-4 p-2 rounded-full transition-all duration-200;
+    color: rgba(255, 255, 255, 0.7);
+    background: rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(4px);
+    
+    &:hover {
+      color: rgba(255, 255, 255, 0.9);
+      background: rgba(0, 0, 0, 0.1);
+      transform: scale(1.05);
+    }
+  }
+
+  /* Dark mode for close button */
+  .dark .mobilenav_close {
+    color: rgba(71, 85, 105, 0.7);
+    background: rgba(255, 255, 255, 0.05);
+    
+    &:hover {
+      color: rgba(71, 85, 105, 0.9);
+      background: rgba(255, 255, 255, 0.1);
+    }
   }

@@ -14,22 +14,25 @@ export const MobileNav = ({ showNav, closeNav }: Props) => {
     <>
       <div className={` ${navOpen} mobilenav_main`}>
         <div className={` ${navOpen} mobilenav_layer`}>
-          {navLinks.map((nav) => {
-            return (
-              <Link key={nav.id} href={nav.url}>
-                <p className="mobilenav_label nav_link sm-text-[30px]">
-                  {nav.label}
-                </p>
-              </Link>
-            );
-          })}
           <Icon
             icon="ic:outline-close"
             onClick={closeNav}
-            width="24"
-            height="24"
-            className="cursor-pointer text-white dark:text-slate-600  absolute top-5 right-2"
+            width="28"
+            height="28"
+            className="mobilenav_close"
           />
+          
+          <div className="flex flex-col justify-center h-full space-y-6 px-4">
+            {navLinks.map((nav) => {
+              return (
+                <Link key={nav.id} href={nav.url} onClick={closeNav}>
+                  <div className="mobilenav_label">
+                    {nav.label}
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
         </div>
       </div>
     </>

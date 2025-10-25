@@ -15,13 +15,13 @@ export const About = () => {
             <p className="indent-10 text-justify">{aboutInfo.description}</p>
           </FadeInSectionLeft>
           <FadeInSectionRight>
-            <h1 className="mb-1">Career&apos;s Roadmap</h1>
+            <h1 className="mb-2">Career&apos;s Roadmap</h1>
             {aboutInfo?.job_histories.map((job) => {
               return (
                 <ul key={job.id} className="text-2xl mb-3 flex dark:text-white">
                   <li>{job.id}.&nbsp;</li>
                   <li>
-                    <span>Corp: {job.corpName}</span>
+                    <span>Company: {job.corpName}</span>
                     <span>Position: {job.job}</span>
                     <span className="text-balance">Description: {job.desc}</span>
                   </li>

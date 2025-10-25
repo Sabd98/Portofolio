@@ -1,5 +1,8 @@
 .nav_link {
   @apply relative text-xl font-bold w-fit h-fit inline-block;
+  display: flex;
+  align-items: center;
+  line-height: 1;
   &::before {
     content: "";
     position: absolute;
@@ -28,14 +31,8 @@
 .nav_main {
   @apply fixed h-[10vh] z-[10] bg-slate-50 dark:bg-slate-700 w-full;
 
-  & > .nav_layer {
-    @apply flex items-center h-full justify-between w-[95%] sm:w-[90%] xl:w-[80%] mx-auto;
-
-    // Tambahkan ini untuk memastikan alignment vertikal konsisten
-    & > h1,
-    & > .nav_content {
-      @apply flex-shrink-0;
-    }
+  .nav_layer {
+    @apply flex items-center h-full justify-between w-[95%] sm:w-[93%] xl:w-[90%] mx-auto;
   }
 }
 
