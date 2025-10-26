@@ -1,15 +1,22 @@
 .project {
-    @apply  overflow-hidden bg-gray-100 dark:bg-gray-800;
+    @apply overflow-hidden bg-gray-100 dark:bg-gray-800 py-8;
    
     &_container {
-      @apply grid grid-cols-1 md:grid-cols-2 w-11/12 mx-auto lg:mt-10 sm:mt-5 xl:grid-cols-4 items-center gap-5  ;
-      
+      @apply grid grid-cols-1 md:grid-cols-2 w-11/12 mx-auto lg:mt-10 sm:mt-5 xl:grid-cols-4 gap-5;
+      // Ensure all grid items have equal height
+      > div {
+        @apply bg-white dark:bg-gray-700 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200 dark:border-gray-700;
+        min-height: 380px; /* Reduced height */
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 1rem; /* Add bottom padding to cards */
+      }
     }
 
     &_card {
-        @apply p-2 rounded-xl duration-500 transition-all ;
+        @apply p-3 rounded-xl duration-500 transition-all; /* Reduced padding */
         &:hover{
-           @apply scale-125; 
+           @apply scale-[1.02]; 
         }
       }
   }

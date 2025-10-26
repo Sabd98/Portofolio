@@ -14,13 +14,13 @@ export const aboutInfo = {
     {
       id: 1,
       corpName: "IndoCyber Global Technology",
-      job: "Backend Developer Bootcamp Contestant",
+      job: "Backend Developer Bootcamp Contestant. ",
       desc: "Guaranteed Bootcamp Based on .NET Framework",
     },
     {
       id: 2,
       corpName: "PT Poly Jaya Medical",
-      job: "Fullstack Developer",
+      job: "Fullstack Developer. ",
       desc: "Being IT Support on Software of Plane and Racing Simulator with C# GUI and HIS Web Software with Next.js + Node.js+ PostgreSQL. Being Fullstack Developer on Monitoring Incubator Web App (React.js+Node+js+Mysql) Project",
     },
   ],
@@ -150,11 +150,11 @@ export const projectData = [
   },
   {
     id: 15,
-    image: "/images/p15.jpg",
-    url: "https://github.com/Sabd98/payroll-api",
-    source: "https://github.com/Sabd98/payroll-api",
-    title: "Employee Payroll API",
-    techstacks: "Techstacks:node.js,Express.js,PostgreSQL,Sequelize,JWT,jest",
+    image: "/images/p15.png",
+    url: "https://multistep-bloggy-creator.vercel.app/",
+    source: "https://github.com/Sabd98/bloggy-fe-test",
+    title: "Bloggy Multisteps",
+    techstacks: "Techstacks:Typescript,React.js,Next.js,Tailwindcss,Sass,Zustand,axios,zod, Material UI",
   },
   {
     id: 16,
@@ -217,6 +217,24 @@ export const projectData = [
     title: "Shopedia",
     techstacks:
       "Techstacks:Vue.js,Vite,Typescript,sass,Tailwind CSS,axios,Pinia,Vuetify",
+  },
+  {
+    id: 23,
+    image: "/images/p23.png",
+    url: "https://github.com/Sabd98/fmri-app-test",
+    source: "https://github.com/Sabd98/fmri-app-test",
+    title: "Ai-Chat Trial",
+    techstacks:
+      "Techstacks:Typescript,React.js,Vite,Tailwindcss,ExpressJs,axios,Zustand,Ant Design,Ai-sdk,Postgre,Sequelize,Zod",
+  },
+  {
+    id: 24,
+    image: "/images/p24.png",
+    url: "https://github.com/Sabd98/aiopen-platform",
+    source: "https://github.com/Sabd98/aiopen-platform",
+    title: "Ai-Open Platform",
+    techstacks:
+      "Techstacks:Typescript,React.js,Next.js,Tailwindcss,ExpressJs,Cookie,axios,Zustand,Ant Design,Ai-sdk,Postgre,Sequelize,Zod",
   },
 ];
 

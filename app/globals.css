@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @layer base{
-  body {
-    @apply dark;
-  }
-} */
 
 @layer components {
 
@@ -42,16 +37,14 @@
   
   
   [id] {
-    scroll-margin-top: 15vh; /* Match your nav height */
+    scroll-margin-top: 15vh; 
   }
 
-  /* Simple fix for navbar button vertical alignment */
   .nav_content .button {
     margin-top: 0 !important;
     margin-bottom: 0 !important;
   }
 
-  /* Perfect alignment for navigation links */
   .nav_link {
     display: flex !important;
     align-items: center !important;
@@ -60,9 +53,60 @@
     padding: 0 !important;
   }
 
-  /* Remove any unwanted spacing on nav container */
   .lg\\:flex > div {
     margin: 0 !important;
     padding: 0 !important;
+  }
+
+  /* Line clamp utilities */
+  .line-clamp-3 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-clamp: 3;
+    line-height: 1.25; /* Match leading-tight instead of 1.5 */
+    max-height: 3.75em; /* 3 lines * 1.25 line-height = 3.75em */
+  }
+
+  .line-clamp-none {
+    overflow: visible;
+    display: block;
+    -webkit-box-orient: initial;
+    line-clamp: initial;
+    max-height: none;
+  }
+
+  /* Project card improvements */
+  .project-card-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-techstack {
+    word-wrap: break-word;
+    hyphens: auto;
+    background: rgba(0, 0, 0, 0.02);
+    border-radius: 0.25rem;
+  }
+
+  .dark .project-techstack {
+    background: rgba(255, 255, 255, 0.03);
+  }
+
+  /* Center button wrapper - isolated from grid layout */
+  .project-button-wrapper {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 1.5rem 0 !important;
+    clear: both !important;
+  }
+
+  .project-button-wrapper button {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 }
