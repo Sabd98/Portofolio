@@ -26,6 +26,51 @@ export const aboutInfo = {
   ],
 };
 
+export const timelineData = [
+  {
+      year: '2025-present',
+      company: 'FMRI Research and Analytics',
+      position: 'Fullstack Developer',
+      description: [
+        'My tasks as Fullstack Developer:',
+        '1. Responsible for Develop and Build a Fullstack Web App Boilerplate based on AI Features for business research.',
+        '2. Create and Adjust global reusable components,states,fetching, and utils for clean and polished codes.',
+        '3. Develop and Design UI app displays and UX app logics, features, and proformances.',
+        '4. Develop structured + reusabled API structure like global routes,configs,api logics, database models,and server proformances.',
+        '5. Develop and Build Database Tables Structures.',
+        '6. Debugging, Fixing,Testing, Polishing, and Push then Deploy codes to Webapp.',
+        '',
+        'Projects: Currently focusing on FMRI-AI Research Suite Webapp Development.'
+      ].join('\n'),
+      chipColor: 'success' as const,
+    },
+    {
+      year: '2023-2025',
+      company: 'PT Poly Jaya Medical',
+      position: 'Fullstack Developer',
+      description: ['My tasks as Fullstack Developer:',
+'1. Develop and build an app structure using React.js, for Frontend, Express.js for Backend, Mysql and Postgresql for Databases. and many supported libraries.', 
+'2. Develop and Maintained global reusable components,states,fetching, and utils for code consistency.',
+'3. Develop and Maintained UI app displays and UX app logics, features, and proformances.',
+'4. Develop structured + reusabled API structure like global routes,configs,controllers,services, database models,and server proformances.',
+'5. Develop and Build Database Tables Structures.',  
+'6. Fixing, Debugging, Testing, Polishing, and Deploy codes.',
+'Projects:',
+'1. Racing(athome) and Plane (Mini cessna) Simulator  Software Desktop for Plugin. Participated As IT Support to maintain,polish,and develop a few of code with C# WPF/Windows Form. (June 2023 - October 2024)',
+'2. HIS(Hospital Information System). As Fullstack Support in this Fullstack Web App. Automatically get more Fullstack Developer Experience in this project. Using Javascript framework and PostgreSQL. (Dec 2023 - June 2024).',
+'3. Monitoring Incubator. As Main Fullstack Developer. I develop this application to maintain and visualize Incubator device data in Web App Software to make testing and monitoring easier for Hospital staffs.',
+'Using Javascript frameworks, react js and express js with Mysql database.'].join('\n'),
+      chipColor: 'primary' as const,
+    },
+    {
+      year: '2022-2023',
+      company: 'IndoCyber Global Technology',
+      position: 'Backend Developer Bootcamp Contestant',
+      description: 'Guaranteed Bootcamp Based on .NET Framework',
+      chipColor: 'primary' as const,
+    }
+  ];
+
 export const projectData = [
   {
     id: 1,

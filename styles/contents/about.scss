@@ -1,12 +1,90 @@
 .about {
-  @apply  overflow-hidden bg-gray-100 dark:bg-gray-800;
-  &_layer {
-    @apply flex flex-col justify-center w-4/5 mx-auto;
+  @apply overflow-hidden bg-gray-100 dark:bg-gray-800;
+  min-height: 100vh;
+  position: relative;
+  
+  .MuiContainer-root {
+    position: relative;
+    z-index: 1;
   }
-  &_container {
-    @apply grid grid-cols-1 my-10 pb-6 lg:grid-cols-2  ;
-    &_img {
-      @apply hidden mx-auto lg:block overscroll-x-none  overflow-y-hidden;
+  
+  .MuiTimeline-root {
+    padding: 0;
+    
+    .MuiTimelineOppositeContent-root {
+      flex: 0.3;
+      padding: 6px 16px;
+    }
+    
+    .MuiTimelineContent-root {
+      flex: 0.7;
+    }
+  }
+  
+  .MuiAccordion-root {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid transparent;
+    
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+      border-color: rgba(102, 126, 234, 0.3);
+    }
+    
+    &.Mui-expanded {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+    }
+  }
+  
+  .MuiCard-root {
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    
+    &:hover {
+      transform: translateY(-5px);
+      transition: all 0.3s ease;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+    }
+  }
+  
+  .MuiTimelineDot-root {
+    transition: all 0.3s ease;
+    
+    &:hover {
+      transform: scale(1.2);
+      box-shadow: 0 0 20px rgba(33, 150, 243, 0.5);
+    }
+  }
+  
+  // Responsive design
+  @media (max-width: 768px) {
+    .MuiTimeline-root {
+      .MuiTimelineOppositeContent-root {
+        display: none;
+      }
+      
+      .MuiTimelineContent-root {
+        flex: 1;
+      }
+    }
+    
+    .MuiGrid-container {
+      .MuiGrid-item {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+  
+  .dark & {
+    .MuiCard-root {
+      background: rgba(30, 41, 59, 0.4);
+      border-color: rgba(148, 163, 184, 0.2);
+    }
+    
+    .MuiAccordion-root {
+      background: rgba(30, 41, 59, 0.6);
+      border-color: rgba(148, 163, 184, 0.1);
     }
   }
 }
