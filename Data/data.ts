@@ -61,6 +61,48 @@ export const timelineInfo = [
     }
   ];
 
+  export const mainProjectData = [
+    {
+      id: 1,
+      url: "https://fmri-ai.com/",
+      image: "/images/Ai Erp Tools.png",
+      title: "FMRI-AI Research Suite",
+      year: '2025',
+      company: "FMRI Research and Analytics",
+      techstacks: "Techstacks:Typescript,React.js,Next.js,Ant Design,Mob X, Zod, Tanstack Query,Node.js,PostgreSQL,Sequelize",
+      description: 'An Enterprise-level AI Integration Tools for Marketing Research Business to Improve Efficiency and Productivity.',
+    },
+    {
+      id: 2,
+      url: "",
+      image: "/images/MonitoringIncubator.jpg",
+      title: "Monitoring Incubator",
+      year: '2025',
+      company: "PT Poly Jaya Medical",
+      techstacks: "Techstacks:Javascript,React.js,Vite,Material UI,Redux Toolkit, Zod, axios,Node.js,Express.js,MySQL,Sequelize",
+      description: 'A Web Application for Monitoring Incubator Device Data to Improve Displaying and Visualizing Incubator Device Data more Efficiently and Flexible.',
+    },
+    {
+      id: 3,
+      url: "",
+      image: "/images/HIS.jpg",
+      title: "HIS(Hospital Information System)",
+      year: '2023',
+      company: "PT Poly Jaya Medical",
+      techstacks: "Techstacks:Typescript,React.js,Next.js,Material UI,Redux Toolkit, Zod, axios,Node.js,Express.js,PostgreSQL ,Prisma",
+      description: 'A Web Application for Hospital Outpatient Management System to Improve Efficiency and Productivity of Outpatient Clinic/Hospital Services.',
+    },
+    {
+      id: 4,
+      url: "",
+      image: "",
+      title: "Racing and Plane Simulator",
+      year: '2023',
+      company: "PT Poly Jaya Medical",
+      techstacks: "Techstacks:C#, Windows Form, WPF",
+      description: 'A Desktop Application for Racing and Plane Simulator to Improve Efficiency and Productivity of Racing and Plane Services.',
+    }
+  ]
 export const projectData = [
   {
     id: 1,

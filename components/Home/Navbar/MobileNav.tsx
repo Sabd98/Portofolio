@@ -1,6 +1,6 @@
 "use client";
 
-import { navLinks } from "@/constant/constant";
+import { navLinks } from "@/constant/navs";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import Link from "next/link";
 import React from "react";

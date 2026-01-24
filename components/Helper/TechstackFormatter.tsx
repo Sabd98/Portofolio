@@ -11,10 +11,8 @@ export const TechstackFormatter: React.FC<TechstackFormatterProps> = ({
 }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   
-  // Remove "Techstacks:" prefix if it exists
   const cleanTechstacks = techstacks.replace(/^Techstacks:\s*/, '');
   
-  // Check if we need to truncate
   const shouldTruncate = cleanTechstacks.length > maxLength;
   const displayText = shouldTruncate && !isExpanded 
     ? cleanTechstacks.substring(0, maxLength) + '...'
