@@ -69,7 +69,7 @@ export const timelineInfo = [
       title: "FMRI-AI Research Suite",
       year: '2025',
       company: "FMRI Research and Analytics",
-      techstacks: "Techstacks:Typescript,React.js,Next.js,Ant Design,Mob X, Zod, Tanstack Query,Node.js,PostgreSQL,Sequelize",
+      techstacks: "Techstacks:Typescript,React.js,Next.js,Ant Design,Mob X, Zod, Tanstack Query,Node.js,PostgreSQL,Sequelize,AI-SDK,Minio,AWS,Docker,Git",
       description: 'An Enterprise-level AI Integration Tools for Marketing Research Business to Improve Efficiency and Productivity.',
     },
     {
@@ -79,7 +79,7 @@ export const timelineInfo = [
       title: "Monitoring Incubator",
       year: '2025',
       company: "PT Poly Jaya Medical",
-      techstacks: "Techstacks:Javascript,React.js,Vite,Material UI,Redux Toolkit, Zod, axios,Node.js,Express.js,MySQL,Sequelize",
+      techstacks: "Techstacks:Javascript,React.js,Vite,Material UI,Redux Toolkit, Zod, axios,Node.js,Express.js,MySQL,Sequelize,Git",
       description: 'A Web Application for Monitoring Incubator Device Data to Improve Displaying and Visualizing Incubator Device Data more Efficiently and Flexible.',
     },
     {
@@ -89,7 +89,7 @@ export const timelineInfo = [
       title: "HIS(Hospital Information System)",
       year: '2023',
       company: "PT Poly Jaya Medical",
-      techstacks: "Techstacks:Typescript,React.js,Next.js,Material UI,Redux Toolkit, Zod, axios,Node.js,Express.js,PostgreSQL ,Prisma",
+      techstacks: "Techstacks:Typescript,React.js,Next.js,Material UI,Redux Toolkit, Zod, axios,Node.js,Express.js,PostgreSQL ,Prisma,Git",
       description: 'A Web Application for Hospital Outpatient Management System to Improve Efficiency and Productivity of Outpatient Clinic/Hospital Services.',
     },
     {

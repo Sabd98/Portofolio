@@ -138,7 +138,11 @@ export const FeaturedProjectCard = ({ project, onInfoClick }: Props) => {
                 bgcolor: "background.paper",
                 boxShadow: 1,
                 my: 1,
-                "&:hover": { bgcolor: "primary.light", color: "white" },
+                "&:hover": {
+                  bgcolor: "text.primary",
+                  color: "background.default",
+                  borderColor: "text.primary",
+                },
               }}
             >
               <Icon icon="mdi:information-variant" />

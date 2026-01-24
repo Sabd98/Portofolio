@@ -28,6 +28,7 @@ export const FeaturedProject = () => {
       sx={{
         bgcolor: "background.default",
         overflow: "hidden",
+        pb: 4,
       }}
     >
       <Container maxWidth="xl">

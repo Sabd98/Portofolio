@@ -11,7 +11,7 @@ import {
   Divider,
 } from "@mui/material";
 import { Icon } from "@iconify/react";
-import { TechStackList } from "../Personal/TechstackList";
+import { TechStackList } from "../../Helper/TechstackList";
 
 type Project = {
   id: number;
@@ -69,7 +69,7 @@ export const ProjectModal = ({ open, onClose, project }: Props) => {
             variant="h6"
             gutterBottom
             fontWeight="bold"
-            color="primary"
+            color="textPrimary"
           >
             Description
           </Typography>
@@ -87,7 +87,7 @@ export const ProjectModal = ({ open, onClose, project }: Props) => {
             variant="h6"
             gutterBottom
             fontWeight="bold"
-            color="primary"
+            color="textPrimary"
           >
             Tech Stacks
           </Typography>
@@ -95,7 +95,20 @@ export const ProjectModal = ({ open, onClose, project }: Props) => {
         </Box>
       </DialogContent>
       <DialogActions sx={{ p: 2, pt: 0 }}>
-        <Button onClick={onClose} variant="outlined" sx={{ borderRadius: 2 }}>
+        <Button
+          onClick={onClose}
+          variant="outlined"
+          sx={{
+            borderRadius: 2,
+            borderColor: "text.primary",
+            color: "text.primary",
+            "&:hover": {
+              bgcolor: "text.primary",
+              color: "background.default",
+              borderColor: "text.primary",
+            },
+          }}
+        >
           Close
         </Button>
       </DialogActions>
