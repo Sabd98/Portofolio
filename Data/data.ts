@@ -9,24 +9,14 @@ export const BaseInfo = {
 export const aboutInfo = {
   title: "Web Developer Enthusiast",
   description:
-    "Passionate about IT technology, especially web development.Have advantages in front-end and fullstack skills. I have a special and unique background that you can check on my CV.",
-  job_histories: [
-    {
-      id: 1,
-      corpName: "IndoCyber Global Technology",
-      job: "Backend Developer Bootcamp Contestant. ",
-      desc: "Guaranteed Bootcamp Based on .NET Framework",
-    },
-    {
-      id: 2,
-      corpName: "PT Poly Jaya Medical",
-      job: "Fullstack Developer. ",
-      desc: "Being IT Support on Software of Plane and Racing Simulator with C# GUI and HIS Web Software with Next.js + Node.js+ PostgreSQL. Being Fullstack Developer on Monitoring Incubator Web App (React.js+Node+js+Mysql) Project",
-    },
-  ],
+    `A Bachelor of Informatics Engineering graduate with almost 3 years experiences. Currently working as a Full-Stack Developer in the
+Marketing Research Enterprise based on AI Integration. Passionate about building and developing scalable web applications, refactor
+and clean codes, testing developed features, debugging and fixing code issues and bugs, UI/UX Excellence, and deliverable high-quality
+products for clients. A Web Developer Enthusiast who is interested in fintech, health, retail, enterprise, and ai system.`,
+
 };
 
-export const timelineData = [
+export const timelineInfo = [
   {
       year: '2025-present',
       company: 'FMRI Research and Analytics',

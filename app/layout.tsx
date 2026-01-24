@@ -6,7 +6,6 @@ import "../styles/nav.scss";
 import "../styles/mobile_nav.scss";
 import "../styles/contents/hero.scss";
 import "../styles/contents/about.scss";
-import "../styles/contents/project.scss";
 import "../styles/contents/skills.scss";
 import "../styles/contents/contact.scss";
 import { ThemeProvider } from "@/components/Helper/ThemeContext";

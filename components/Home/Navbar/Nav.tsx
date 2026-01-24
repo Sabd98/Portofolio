@@ -4,24 +4,28 @@ import { navLinks } from "@/constant/constant";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { Button, FormControlLabel, Switch } from "@mui/material";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 type Props = {
   openNav: () => void;
 };
 
 export const Nav = ({ openNav }: Props) => {
+  const pathname = usePathname();
   const handleScroll = (
     e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
     hash: string
   ) => {
-    e.preventDefault();
-    const element = document.querySelector(hash);
-    element?.scrollIntoView({ behavior: "smooth" });
+    if (pathname === "/" && hash.startsWith("#")) {
+      e.preventDefault();
+      const element = document.querySelector(hash);
+      element?.scrollIntoView({ behavior: "smooth" });
+    }
   };
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <div className="nav_main">
+    <header className="nav_main">
       <div className="nav_layer ">
         <h1 className="hidden md:block text-5xl">MY WEB</h1>
         <div className="nav_content space-x-12">
@@ -34,15 +38,19 @@ export const Nav = ({ openNav }: Props) => {
           />
           <div className="hidden items-center h-fit lg:flex flex-1 justify-center space-x-8">
             {navLinks.map((nav) => {
+              let href = nav.url;
+              if (pathname !== "/" && nav.url.startsWith("#")) {
+                href = `/${nav.url}`;
+              }
               return (
-                <div key={nav.id}>
+                <nav key={nav.id}>
                   <Link
-                    href={nav.url}
+                    href={href}
                     onClick={(e) => handleScroll(e, nav.url)}
                   >
                     <p className="nav_link">{nav.label}</p>
                   </Link>
-                </div>
+                </nav>
               );
             })}
           </div>
@@ -86,6 +94,6 @@ export const Nav = ({ openNav }: Props) => {
           />
         </div>
       </div>
-    </div>
+    </header>
   );
 };

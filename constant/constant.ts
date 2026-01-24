@@ -11,8 +11,8 @@ export const navLinks = [
   },
   {
     id: 3,
-    url: "#projects",
-    label: "Projects",
+    url: "/personal",
+    label: "Personal Projects",
   },
   {
     id: 4,

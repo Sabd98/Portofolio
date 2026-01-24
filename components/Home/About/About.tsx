@@ -3,7 +3,7 @@ import { FadeInSectionLeft } from "@/components/Helper/FadeInSectionLeft";
 import { FadeInSectionRight } from "@/components/Helper/FadeInSectionRight";
 import { FadeInSectionY } from "@/components/Helper/FadeInSectionY";
 import { SectionHeading } from "@/components/Helper/Helper";
-import { aboutInfo, timelineData } from "@/Data/data";
+import { aboutInfo, timelineInfo } from "@/Data/data";
 import {
   Timeline,
   TimelineItem,
@@ -140,7 +140,7 @@ export const About = () => {
                       },
                     }}
                   >
-                    {timelineData.map((item, index) => (
+                    {timelineInfo.map((item, index) => (
                       <TimelineItem key={index}>
                         <TimelineSeparator>
                           <TimelineDot
@@ -153,7 +153,7 @@ export const About = () => {
                           >
                             <Icon icon="mdi:briefcase" width={20} height={20} />
                           </TimelineDot>
-                          {index < timelineData.length - 1 && (
+                          {index < timelineInfo.length - 1 && (
                             <TimelineConnector sx={{ minHeight: 60 }} />
                           )}
                         </TimelineSeparator>
@@ -236,7 +236,7 @@ export const About = () => {
                     Job Descriptions
                   </Typography>
 
-                  {timelineData.map((item, index) => (
+                  {timelineInfo.map((item, index) => (
                     <Accordion
                       key={index}
                       expanded={expanded === `panel${index}`}
