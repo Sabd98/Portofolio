@@ -1,10 +1,10 @@
 .hero {
-  @apply mt-6 py-8 pt-16 overflow-hidden bg-gray-100 dark:bg-gray-800;
+  @apply mt-6 py-8 pt-24 overflow-hidden bg-gray-100 dark:bg-gray-800;
   &_layer {
     @apply w-4/5 mx-auto;
   }
   &_container {
-    @apply grid grid-cols-1 lg:grid-cols-2 items-center mb-10 gap-12;
+    @apply grid grid-cols-1 lg:grid-cols-2 items-center gap-12;
     &_img {
       @apply hidden mx-auto lg:block overscroll-x-none  overflow-y-hidden;
     }
