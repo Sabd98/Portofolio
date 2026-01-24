@@ -8,8 +8,8 @@ export const metadata: Metadata = {
 
 export default function ProjectPage() {
   return (
-    <main className="min-h-screen pt-[10vh]">
+    <section className="min-h-screen pt-[10vh]">
       <FeaturedProject />
-    </main>
+    </section>
   );
 }

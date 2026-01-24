@@ -8,8 +8,8 @@ export const metadata: Metadata = {
 
 export default function PersonalPage() {
   return (
-    <main className="min-h-screen pt-[10vh]">
+    <section className="min-h-screen pt-[10vh]">
       <Project />
-    </main>
+    </section>
   );
 }
