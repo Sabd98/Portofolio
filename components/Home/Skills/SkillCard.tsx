@@ -7,12 +7,12 @@ type Props = {
     id: number;
     title: string;
     image: string;
-    percent: string;
+    source:string;
   };
 };
 
 export const SkillCard = ({ skill }: Props) => {
-  const { image, percent, title } = skill;
+  const { image, title,source } = skill;
   return (
     <motion.div
       className="skill_card "
@@ -28,12 +28,11 @@ export const SkillCard = ({ skill }: Props) => {
         <Image
           src={image}
           alt={title}
-          width={80}
-          height={80}
+          width={60}
+          height={60}
           className="object-contain mx-auto"
         />
-        <h1 className="text-2xl dark:text-white font-semibold">{title}</h1>
-        <p className="skill_label">{percent}</p>
+        <h1 className="text-xl dark:text-white font-semibold mt-2">{title}</h1>
       </motion.div>
 
       {/* Sisi Belakang */}
@@ -41,10 +40,10 @@ export const SkillCard = ({ skill }: Props) => {
         className="skill_card_back"
         style={{ transform: "rotateY(180deg)", backfaceVisibility: "hidden" }}
       >
-        <h1 className="text-3xl font-semibold">More Info</h1>
+        <h1 className="text-xl font-semibold">More Info</h1>
         <a
-          href={`https://www.linkedin.com/in/sabda-avicenna`}
-          className="text-xl mt-1 hover:text-gray-900 "
+          href={source}
+          className="text-base mt-2 hover:text-gray-900 "
         >
           Click for details
         </a>

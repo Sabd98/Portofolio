@@ -8,9 +8,9 @@ import Image from "next/image";
 
 export const Hero = () => {
   return (
-    <div className="hero">
+    <section className="hero">
       <div className="hero_layer">
-        <div className="hero_container">
+        <article className="hero_container">
           <FadeInSectionLeft>
             <h1>
               {BaseInfo.name}
@@ -45,8 +45,8 @@ export const Hero = () => {
               />
             </FadeInSectionRight>
           </div>
-        </div>
+        </article>
       </div>
-    </div>
+    </section>
   );
 };

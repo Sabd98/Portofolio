@@ -6,10 +6,10 @@ import { FadeInSectionY } from "@/components/Helper/FadeInSectionY";
 
 export const Skills = () => {
   return (
-    <div className="skill">
+    <section className="skill">
       <SectionHeading>My Skills</SectionHeading>
       <FadeInSectionY>
-        <div className="skill_container">
+        <article className="skill_container">
           {skillsData.map((skill) => {
             return (
               <div key={skill.id}>
@@ -17,8 +17,8 @@ export const Skills = () => {
               </div>
             );
           })}
-        </div>
+        </article>
       </FadeInSectionY>
-    </div>
+    </section>
   );
 };

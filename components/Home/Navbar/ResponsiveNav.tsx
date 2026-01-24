@@ -2,10 +2,7 @@
 
 import { MobileNav } from "./MobileNav"
 import { Nav } from "./Nav"
-
 import { useState } from 'react';
-
-
 
 export const ResponsiveNav = () => {
 const [showNav, setShowNav] = useState(false); 

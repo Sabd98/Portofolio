@@ -22,7 +22,6 @@ import {
   Card,
   CardContent,
   Chip,
-  Grid2,
 } from "@mui/material";
 import { Icon } from "@iconify/react";
 
@@ -35,7 +34,7 @@ export const About = () => {
     };
 
   return (
-    <div className="about">
+    <section className="about">
       <Container maxWidth="lg" sx={{ py: 4 }}>
         <SectionHeading>About Me</SectionHeading>
 
@@ -312,6 +311,6 @@ export const About = () => {
           </Box>
         </Box>
       </Container>
-    </div>
+    </section>
   );
 };

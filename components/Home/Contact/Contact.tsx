@@ -8,11 +8,11 @@ import React from "react";
 
 export const Contact = () => {
   return (
-    <div className=" contact">
-      <SectionHeading>My Contact</SectionHeading>
+    <section className="contact">
+      <SectionHeading className="!mb-4">My Contact</SectionHeading>
 
       <div className="contact_layer">
-        <div className="contact_container">
+        <article className="contact_container">
           <FadeInSectionLeft>
             <h3 className="contact_label ">
               <Icon icon="logos:whatsapp-icon" width="25" height="25" />
@@ -76,8 +76,8 @@ export const Contact = () => {
               </span>
             </h3>
           </FadeInSectionRight>
-        </div>
+        </article>
       </div>
-    </div>
+    </section>
   );
 };

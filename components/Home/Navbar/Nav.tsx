@@ -36,24 +36,24 @@ export const Nav = ({ openNav }: Props) => {
             height="24"
             className="icon"
           />
-          <div className="hidden items-center h-fit lg:flex flex-1 justify-center space-x-8">
+          <nav className="hidden items-center h-fit lg:flex flex-1 justify-center space-x-8">
             {navLinks.map((nav) => {
               let href = nav.url;
               if (pathname !== "/" && nav.url.startsWith("#")) {
                 href = `/${nav.url}`;
               }
               return (
-                <nav key={nav.id}>
+                <div key={nav.id}>
                   <Link
                     href={href}
                     onClick={(e) => handleScroll(e, nav.url)}
                   >
                     <p className="nav_link">{nav.label}</p>
                   </Link>
-                </nav>
+                </div>
               );
             })}
-          </div>
+          </nav>
         </div>
 
         <div className="nav_content space-x-4">
