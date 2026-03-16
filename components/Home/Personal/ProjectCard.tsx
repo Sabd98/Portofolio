@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { Card, Typography, Box } from "@mui/material";
+import { Icon } from "@iconify/react";
 
 type Props = {
   project: {
@@ -15,50 +16,59 @@ type Props = {
 export const ProjectCard = ({ project }: Props) => {
   const { url, image, title } = project;
   return (
-    <Card 
-      component={Link} 
-      href={url} 
+    <Card
+      component={Link}
+      href={url}
       target="_blank"
       sx={{
-        height: '100%',
-        display: 'flex',
-        flexDirection: 'column',
-        textDecoration: 'none',
-        transition: 'transform 0.3s ease-in-out',
-        '&:hover': {
-          transform: 'scale(1.02)',
+        height: "100%",
+        display: "flex",
+        flexDirection: "column",
+        textDecoration: "none",
+        transition: "transform 0.3s ease-in-out",
+        "&:hover": {
+          transform: "scale(1.02)",
         },
         borderRadius: 3,
-        overflow: 'hidden',
-        bgcolor: 'background.paper',
+        overflow: "hidden",
+        bgcolor: "background.paper",
       }}
     >
-      <Box sx={{ p: 2, pb: 0, textAlign: 'center' }}>
-        <Typography 
-          variant="h6" 
-          component="h2" 
+      <Box sx={{ p: 2, pb: 0, textAlign: "center" }}>
+        <Typography
+          variant="h6"
+          component="h2"
           fontWeight="bold"
-          sx={{ 
-            minHeight: '3rem', 
-            display: 'flex', 
-            alignItems: 'center', 
-            justifyContent: 'center',
-            color: 'text.primary' 
+          sx={{
+            minHeight: "3rem",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            color: "text.primary",
           }}
         >
           {title}
         </Typography>
       </Box>
-      
-      <Box sx={{ flexGrow: 1, position: 'relative', minHeight: 200 }}>
-        <Image
-          src={image}
-          alt={title}
-          fill
-          style={{ objectFit: "cover" }}
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-        />
-      </Box>
+
+      {image ? (
+        <Box sx={{ flexGrow: 1, position: "relative", minHeight: 200 }}>
+          <Image
+            src={image}
+            alt={title}
+            fill
+            style={{ objectFit: "cover" }}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          />
+        </Box>
+      ) : (
+        <Box sx={{ flexGrow: 1, position: "relative", minHeight: 200, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
+          <Icon icon="bi:image" width="48" height="48" />
+          <Typography variant="caption" sx={{ mt: 1 }}>
+            No Image Available
+          </Typography>
+        </Box>
+      )}
     </Card>
   );
 };

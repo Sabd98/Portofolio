@@ -115,10 +115,10 @@ export const projectData = [
   {
     id: 2,
     image: "/images/p2.png",
-    url: "https://note-keeper-gules.vercel.app/",
-    source: "https://github.com/Sabd98/KeeperApp",
-    title: "Note Keeper",
-    techstacks: "Techstacks:React.js,Vite,Vanilla CSS",
+    url: "https://taskmaster-pro-two.vercel.app/",
+    source: "https://github.com/Sabd98/simple-task-master",
+    title: "Task Master App",
+    techstacks: "Techstacks:jQuery,Vanilla CSS, Tailwind Css",
   },
   {
     id: 3,
@@ -131,10 +131,10 @@ export const projectData = [
   {
     id: 4,
     image: "/images/p4.png",
-    url: "https://my-calcuvest.vercel.app/",
-    source: "https://github.com/Sabd98/Calcuvest",
-    title: "Calcuvest",
-    techstacks: "Techstacks:React.js,Vite,Tailwind CSS",
+    url: "https://chilimovies.vercel.app/",
+    source: "https://github.com/Sabd98/chill-movie-app",
+    title: "Chill Movie App",
+    techstacks: "Techstacks:React.js,Vite,Tailwind CSS, Vanilla Css, Rtk Query, Redux, Framer-Motion, Firebase API",
   },
   {
     id: 5,
@@ -297,12 +297,12 @@ export const projectData = [
   },
   {
     id: 23,
-    image: "/images/p23.png",
-    url: "https://github.com/Sabd98/fmri-app-test",
-    source: "https://github.com/Sabd98/fmri-app-test",
-    title: "Ai-Chat Trial",
+    image: "",
+    url: "https://github.com/Sabd98/chill-api",
+    source: "https://github.com/Sabd98/chill-api",
+    title: "Chill Movies API",
     techstacks:
-      "Techstacks:Typescript,React.js,Vite,Tailwindcss,ExpressJs,axios,Zustand,Ant Design,Ai-sdk,Postgre,Sequelize,Zod",
+      "Techstacks:Javaascript, Node.js, Express.js, Mysql, Multer, Nodemailer, Bcrypt",
   },
   {
     id: 24,
