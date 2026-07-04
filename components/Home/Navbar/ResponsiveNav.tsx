@@ -5,8 +5,7 @@ import { Nav } from "./Nav"
 import { useState } from 'react';
 import { useActiveSection } from "@/components/Helper/useActiveSection";
 import { usePathname } from "next/navigation";
-
-const HOME_IDS = ["home", "about", "skills", "contact"];
+import { HOME_IDS } from "@/constant/navs";
 
 export const ResponsiveNav = () => {
 const [showNav, setShowNav] = useState(false);

@@ -6,16 +6,16 @@ import { About } from "./About/About";
 import { Skills } from "./Skills/Skills";
 import { Contact } from "./Contact/Contact";
 import { useActiveSection } from "@/components/Helper/useActiveSection";
+import { HOME_IDS } from "@/constant/navs";
 
-const SECTION_IDS = ["home", "about", "skills", "contact"];
 
 export const Home = () => {
-  const activeId = useActiveSection(SECTION_IDS);
+  const activeId = useActiveSection(HOME_IDS);
 
   return (
     <>
       <div>
-        {SECTION_IDS.map((id) => (
+        {HOME_IDS.map((id) => (
           <div key={id} id={id} data-section-active={id === activeId}><HomeChildren id={id} /></div>
         ))}
       </div>

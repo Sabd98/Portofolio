@@ -31,3 +31,6 @@ export const navLinks = [
   },
  
 ];
+
+export const HOME_IDS = ["home", "about", "skills", "contact"];
+
