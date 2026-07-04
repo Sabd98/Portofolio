@@ -9,9 +9,11 @@ import { usePathname } from "next/navigation";
 type Props = {
   showNav: boolean;
   closeNav: () => void;
+  activeId: string;
+  isHomeRoute: boolean;
 };
 
-export const MobileNav = ({ showNav, closeNav }: Props) => {
+export const MobileNav = ({ showNav, closeNav, activeId, isHomeRoute }: Props) => {
   const pathname = usePathname();
   const navOpen = showNav ? "translate-x-0" : "translate-x-[-100%]";
   return (
@@ -38,9 +40,14 @@ export const MobileNav = ({ showNav, closeNav }: Props) => {
             if (pathname !== "/" && nav.url.startsWith("#")) {
               href = `/${nav.url}`;
             }
+            const isHomeSection = nav.url.startsWith("#");
+            const isExternalRoute = !nav.url.startsWith("#");
+            const isActive = isHomeSection
+              ? (isHomeRoute && activeId === nav.url.slice(1))
+              : isExternalRoute && pathname === nav.url;
             return (
               <Link key={nav.id} href={href} onClick={closeNav}>
-                <div className="mobilenav_label">{nav.label}</div>
+                <div className={`mobilenav_label${isActive ? " mobilenav_active" : ""}`}>{nav.label}</div>
               </Link>
             );
           })}

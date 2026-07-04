@@ -9,9 +9,11 @@ import Image from "next/image";
 
 type Props = {
   openNav: () => void;
+  activeId: string;
+  isHomeRoute: boolean;
 };
 
-export const Nav = ({ openNav }: Props) => {
+export const Nav = ({ openNav, activeId, isHomeRoute }: Props) => {
   const pathname = usePathname();
   const handleScroll = (
     e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
@@ -54,9 +56,18 @@ export const Nav = ({ openNav }: Props) => {
               if (pathname !== "/" && nav.url.startsWith("#")) {
                 href = `/${nav.url}`;
               }
+              const isHomeSection = nav.url.startsWith("#");
+            const isExternalRoute = !nav.url.startsWith("#");
+            const isActive = isHomeSection
+              ? (isHomeRoute && activeId === nav.url.slice(1))
+              : isExternalRoute && pathname === nav.url;
               return (
                 <div key={nav.id}>
-                  <Link href={href} onClick={(e) => handleScroll(e, nav.url)}>
+                  <Link
+                    href={href}
+                    onClick={(e) => handleScroll(e, nav.url)}
+                    className={isActive ? "nav_link_active" : ""}
+                  >
                     <p className="nav_link">{nav.label}</p>
                   </Link>
                 </div>

@@ -10,6 +10,7 @@ import "../styles/contents/skills.scss";
 import "../styles/contents/contact.scss";
 import { ThemeProvider } from "@/components/Helper/ThemeContext";
 import Footer from "@/components/Home/Footer/Footer";
+import { ScrollProgress } from "@/components/Helper/ScrollProgress";
 
 const font = Public_Sans({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -33,6 +34,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={font.className}>
         <ThemeProvider>
+          <ScrollProgress />
           <ResponsiveNav />
           {children}
           <Footer />
