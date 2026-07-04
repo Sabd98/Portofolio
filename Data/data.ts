@@ -15,7 +15,7 @@ products for clients. A Web Developer Enthusiast who is interested in fintech, h
 
 export const timelineInfo = [
   {
-    year: "2025-present",
+    year: "2025-2026",
     company: "FMRI Research and Analytics",
     position: "Fullstack Developer",
     description: [
@@ -52,7 +52,7 @@ export const timelineInfo = [
     chipColor: "primary" as const,
   },
   {
-    year: "2022-2023",
+    year: "2023-2023",
     company: "IndoCyber Global Technology",
     position: "Backend Developer Bootcamp Contestant",
     description: "Guaranteed Bootcamp Based on .NET Framework",
