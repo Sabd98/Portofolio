@@ -15,7 +15,11 @@ export const MobileNav = ({ showNav, closeNav }: Props) => {
   const pathname = usePathname();
   const navOpen = showNav ? "translate-x-0" : "translate-x-[-100%]";
   return (
-    <aside className={` ${navOpen} mobilenav_main`}>
+    <aside
+      className={` ${navOpen} mobilenav_main`}
+      aria-label="Mobile navigation"
+      aria-hidden={!showNav}
+    >
       <div className={` ${navOpen} mobilenav_layer`}>
         <Icon
           icon="ic:outline-close"
@@ -25,7 +29,10 @@ export const MobileNav = ({ showNav, closeNav }: Props) => {
           className="mobilenav_close"
         />
 
-        <nav className="flex flex-col justify-center h-full space-y-6 px-4">
+        <nav
+          className="flex flex-col justify-center h-full space-y-6 px-4"
+          aria-label="Mobile menu"
+        >
           {navLinks.map((nav) => {
             let href = nav.url;
             if (pathname !== "/" && nav.url.startsWith("#")) {

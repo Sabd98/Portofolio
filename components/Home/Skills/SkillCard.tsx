@@ -32,7 +32,7 @@ export const SkillCard = ({ skill }: Props) => {
           height={60}
           className="object-contain mx-auto"
         />
-        <h1 className="text-xl dark:text-white font-semibold mt-2">{title}</h1>
+        <h2 className="text-xl dark:text-white font-semibold mt-2">{title}</h2>
       </motion.div>
 
       {/* Sisi Belakang */}
@@ -40,7 +40,7 @@ export const SkillCard = ({ skill }: Props) => {
         className="skill_card_back"
         style={{ transform: "rotateY(180deg)", backfaceVisibility: "hidden" }}
       >
-        <h1 className="text-xl font-semibold">More Info</h1>
+        <h3 className="text-xl font-semibold">More Info</h3>
         <a
           href={source}
           className="text-base mt-2 hover:text-gray-900 "

@@ -55,8 +55,8 @@ export const About = () => {
             >
               <CardContent sx={{ textAlign: "center", py: 6, px: 4 }}>
                 <Typography
-                  variant="h3"
-                  component="h1"
+                  variant="h2"
+                  component="h2"
                   sx={{
                     fontWeight: "bold",
                     background: "text.primary",
@@ -90,15 +90,15 @@ export const About = () => {
         <Box sx={{ py: 2 }}>
           <FadeInSectionY>
             <Typography
-              variant="h3"
-              component="h1"
+              variant="h2"
+              component="h2"
               textAlign="center"
               gutterBottom
               sx={{
                 mb: 6,
                 fontWeight: "bold",
                 color: "text.primary",
-                fontSize: { xs: "2rem", md: "2.5rem" },
+                fontSize: { xs: "1.75rem", md: "2.25rem" },
               }}
             >
               Career&apos;s Roadmap

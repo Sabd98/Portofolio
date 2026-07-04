@@ -12,13 +12,13 @@ export const Hero = () => {
       <div className="hero_layer">
         <article className="hero_container">
           <FadeInSectionLeft>
-            <h1>
+            <h1 className="text-black dark:text-white">
               {BaseInfo.name}
             </h1>
-            <h1>
+            <h2 className="text-black dark:text-white">
               {BaseInfo.position}
-            </h1>
-            <p>
+            </h2>
+            <p className="text-black dark:text-white">
               {BaseInfo.description}
             </p>
             <a href="/myCV.pdf" download="Sabda_Avicenna_CV_Eng.pdf">

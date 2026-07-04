@@ -28,21 +28,27 @@ export const Nav = ({ openNav }: Props) => {
   return (
     <header className="nav_main">
       <div className="nav_layer">
-        <Image
-          src="/images/MyLogo.png"
-          alt="My Logo"
-          width={50}
-          height={50}
-        />
-        <div className="nav_content space-x-12">
-          <Icon
-            onClick={openNav}
-            icon="tdesign:bulletpoint"
-            width="24"
-            height="24"
-            className="icon"
+        <div className="flex items-center">
+          <Image
+            src="/images/MyLogo.png"
+            alt="My Logo"
+            width={50}
+            height={50}
           />
-          <nav className="hidden items-center h-fit lg:flex flex-1 justify-center space-x-8">
+          <button
+            onClick={openNav}
+            aria-label="Open navigation menu"
+            className="icon ml-2"
+          >
+            <Icon
+              icon="tdesign:bulletpoint"
+              width="24"
+              height="24"
+            />
+          </button>
+        </div>
+        <div className="nav_content space-x-12">
+          <nav aria-label="Main" className="hidden items-center h-fit lg:flex flex-1 justify-center space-x-8">
             {navLinks.map((nav) => {
               let href = nav.url;
               if (pathname !== "/" && nav.url.startsWith("#")) {
