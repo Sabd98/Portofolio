@@ -4,6 +4,7 @@ import { FadeInSectionY } from "@/components/Helper/FadeInSectionY";
 import { BaseInfo } from "@/Data/data";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { Button } from "@mui/material";
+import { TypewriterText } from "@/components/Helper/TypewriterText";
 import Image from "next/image";
 
 export const Hero = () => {
@@ -15,8 +16,17 @@ export const Hero = () => {
             <h1 className="text-black dark:text-white">
               {BaseInfo.name}
             </h1>
-            <h2 className="text-black dark:text-white">
-              {BaseInfo.position}
+            <h2 className="text-black dark:text-white font-bold">
+              <TypewriterText
+                texts={[
+                  "Fullstack Web Developer",
+                  "Also a Frontend Developer",
+                  "Also a Backend Developer",
+                  "Or a Software Engineer",
+                  "Or a Freelancer"
+                ]}
+                className="text-primary dark:text-white"
+              />
             </h2>
             <p className="text-black dark:text-white">
               {BaseInfo.description}

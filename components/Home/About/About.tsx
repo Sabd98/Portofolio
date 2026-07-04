@@ -24,6 +24,7 @@ import {
   Chip,
 } from "@mui/material";
 import { Icon } from "@iconify/react";
+import TypewriterText from "@/components/Helper/TypewriterText";
 
 export const About = () => {
   const [expanded, setExpanded] = useState<string | false>(false);
@@ -64,7 +65,13 @@ export const About = () => {
                     fontSize: { xs: "2rem", md: "3rem" },
                   }}
                 >
-                  {aboutInfo.title}
+                  <TypewriterText
+                texts={[
+                  "Web Developer Enthusiast",
+                  "Fullstack Web Developer"
+                ]}
+                className="text-primary dark:text-white"
+              />
                 </Typography>
                 <Typography
                   variant="h6"

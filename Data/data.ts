@@ -1,6 +1,5 @@
 export const BaseInfo = {
   name: "Sabda Avicenna",
-  position: "Fullstack Web Developer",
   description:
     "Hi Visitor, Welcome to My Web Portofolio's. Let's enjoy my works!😊 ",
   profilePic: "/images/mySelf.jpg",
