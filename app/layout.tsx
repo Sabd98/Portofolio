@@ -11,6 +11,7 @@ import "../styles/contents/contact.scss";
 import { ThemeProvider } from "@/components/Helper/ThemeContext";
 import Footer from "@/components/Home/Footer/Footer";
 import { ScrollProgress } from "@/components/Helper/ScrollProgress";
+import { ScrollToTop } from "@/components/Helper/ScrollToTop";
 
 const font = Public_Sans({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -38,6 +39,7 @@ export default function RootLayout({
           <ResponsiveNav />
           {children}
           <Footer />
+          <ScrollToTop />
         </ThemeProvider>
       </body>
     </html>
