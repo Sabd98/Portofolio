@@ -7,101 +7,108 @@ export const BaseInfo = {
 
 export const aboutInfo = {
   title: "Web Developer Enthusiast",
-  description:
-    `A Bachelor of Informatics Engineering graduate with almost 3 years experiences. Currently working as a Full-Stack Developer in the
+  description: `A Bachelor of Informatics Engineering graduate with almost 3 years experiences. Currently working as a Full-Stack Developer in the
 Marketing Research Enterprise based on AI Integration. Passionate about building and developing scalable web applications, refactor
 and clean codes, testing developed features, debugging and fixing code issues and bugs, UI/UX Excellence, and deliverable high-quality
 products for clients. A Web Developer Enthusiast who is interested in fintech, health, retail, enterprise, and ai system.`,
-
 };
 
 export const timelineInfo = [
   {
-      year: '2025-present',
-      company: 'FMRI Research and Analytics',
-      position: 'Fullstack Developer',
-      description: [
-        'My tasks as Fullstack Developer:',
-        '1. Responsible for Develop and Build a Fullstack Web App Boilerplate based on AI Features for business research.',
-        '2. Create and Adjust global reusable components,states,fetching, and utils for clean and polished codes.',
-        '3. Develop and Design UI app displays and UX app logics, features, and proformances.',
-        '4. Develop structured + reusabled API structure like global routes,configs,api logics, database models,and server proformances.',
-        '5. Develop and Build Database Tables Structures.',
-        '6. Debugging, Fixing,Testing, Polishing, and Push then Deploy codes to Webapp.',
-        '',
-        'Projects: Currently focusing on FMRI-AI Research Suite Webapp Development.'
-      ].join('\n'),
-      chipColor: 'success' as const,
-    },
-    {
-      year: '2023-2025',
-      company: 'PT Poly Jaya Medical',
-      position: 'Fullstack Developer',
-      description: ['My tasks as Fullstack Developer:',
-'1. Develop and build an app structure using React.js, for Frontend, Express.js for Backend, Mysql and Postgresql for Databases. and many supported libraries.', 
-'2. Develop and Maintained global reusable components,states,fetching, and utils for code consistency.',
-'3. Develop and Maintained UI app displays and UX app logics, features, and proformances.',
-'4. Develop structured + reusabled API structure like global routes,configs,controllers,services, database models,and server proformances.',
-'5. Develop and Build Database Tables Structures.',  
-'6. Fixing, Debugging, Testing, Polishing, and Deploy codes.',
-'Projects:',
-'1. Racing(athome) and Plane (Mini cessna) Simulator  Software Desktop for Plugin. Participated As IT Support to maintain,polish,and develop a few of code with C# WPF/Windows Form. (June 2023 - October 2024)',
-'2. HIS(Hospital Information System). As Fullstack Support in this Fullstack Web App. Automatically get more Fullstack Developer Experience in this project. Using Javascript framework and PostgreSQL. (Dec 2023 - June 2024).',
-'3. Monitoring Incubator. As Main Fullstack Developer. I develop this application to maintain and visualize Incubator device data in Web App Software to make testing and monitoring easier for Hospital staffs.',
-'Using Javascript frameworks, react js and express js with Mysql database.'].join('\n'),
-      chipColor: 'primary' as const,
-    },
-    {
-      year: '2022-2023',
-      company: 'IndoCyber Global Technology',
-      position: 'Backend Developer Bootcamp Contestant',
-      description: 'Guaranteed Bootcamp Based on .NET Framework',
-      chipColor: 'primary' as const,
-    }
-  ];
+    year: "2025-present",
+    company: "FMRI Research and Analytics",
+    position: "Fullstack Developer",
+    description: [
+      "My tasks as Fullstack Developer:",
+      "1. Responsible for Develop and Build a Fullstack Web App Boilerplate based on AI Features for business research.",
+      "2. Create and Adjust global reusable components,states,fetching, and utils for clean and polished codes.",
+      "3. Develop and Design UI app displays and UX app logics, features, and proformances.",
+      "4. Develop structured + reusabled API structure like global routes,configs,api logics, database models,and server proformances.",
+      "5. Develop and Build Database Tables Structures.",
+      "6. Debugging, Fixing,Testing, Polishing, and Push then Deploy codes to Webapp.",
+      "",
+      "Projects: Currently focusing on FMRI-AI Research Suite Webapp Development.",
+    ].join("\n"),
+    chipColor: "success" as const,
+  },
+  {
+    year: "2023-2025",
+    company: "PT Poly Jaya Medical",
+    position: "Fullstack Developer",
+    description: [
+      "My tasks as Fullstack Developer:",
+      "1. Develop and build an app structure using React.js, for Frontend, Express.js for Backend, Mysql and Postgresql for Databases. and many supported libraries.",
+      "2. Develop and Maintained global reusable components,states,fetching, and utils for code consistency.",
+      "3. Develop and Maintained UI app displays and UX app logics, features, and proformances.",
+      "4. Develop structured + reusabled API structure like global routes,configs,controllers,services, database models,and server proformances.",
+      "5. Develop and Build Database Tables Structures.",
+      "6. Fixing, Debugging, Testing, Polishing, and Deploy codes.",
+      "Projects:",
+      "1. Racing(athome) and Plane (Mini cessna) Simulator  Software Desktop for Plugin. Participated As IT Support to maintain,polish,and develop a few of code with C# WPF/Windows Form. (June 2023 - October 2024)",
+      "2. HIS(Hospital Information System). As Fullstack Support in this Fullstack Web App. Automatically get more Fullstack Developer Experience in this project. Using Javascript framework and PostgreSQL. (Dec 2023 - June 2024).",
+      "3. Monitoring Incubator. As Main Fullstack Developer. I develop this application to maintain and visualize Incubator device data in Web App Software to make testing and monitoring easier for Hospital staffs.",
+      "Using Javascript frameworks, react js and express js with Mysql database.",
+    ].join("\n"),
+    chipColor: "primary" as const,
+  },
+  {
+    year: "2022-2023",
+    company: "IndoCyber Global Technology",
+    position: "Backend Developer Bootcamp Contestant",
+    description: "Guaranteed Bootcamp Based on .NET Framework",
+    chipColor: "primary" as const,
+  },
+];
 
-  export const mainProjectData = [
-    {
-      id: 1,
-      url: "https://fmri-ai.com/",
-      image: "/images/Ai Erp Tools.png",
-      title: "FMRI-AI Research Suite",
-      year: '2025',
-      company: "FMRI Research and Analytics",
-      techstacks: "Techstacks:Typescript,React.js,Next.js,Ant Design,Mob X, Zod, Tanstack Query,Node.js,PostgreSQL,Sequelize,AI-SDK,Minio,AWS,Docker,Git",
-      description: 'An Enterprise-level AI Integration Tools for Marketing Research Business to Improve Efficiency and Productivity.',
-    },
-    {
-      id: 2,
-      url: "",
-      image: "/images/MonitoringIncubator.jpg",
-      title: "Monitoring Incubator",
-      year: '2025',
-      company: "PT Poly Jaya Medical",
-      techstacks: "Techstacks:Javascript,React.js,Vite,Material UI,Redux Toolkit, Zod, axios,Node.js,Express.js,MySQL,Sequelize,Git",
-      description: 'A Web Application for Monitoring Incubator Device Data to Improve Displaying and Visualizing Incubator Device Data more Efficiently and Flexible.',
-    },
-    {
-      id: 3,
-      url: "",
-      image: "/images/HIS.jpg",
-      title: "HIS(Hospital Information System)",
-      year: '2023',
-      company: "PT Poly Jaya Medical",
-      techstacks: "Techstacks:Typescript,React.js,Next.js,Material UI,Redux Toolkit, Zod, axios,Node.js,Express.js,PostgreSQL ,Prisma,Git",
-      description: 'A Web Application for Hospital Outpatient Management System to Improve Efficiency and Productivity of Outpatient Clinic/Hospital Services.',
-    },
-    {
-      id: 4,
-      url: "",
-      image: "",
-      title: "Racing and Plane Simulator",
-      year: '2023',
-      company: "PT Poly Jaya Medical",
-      techstacks: "Techstacks:C#, Windows Form, WPF",
-      description: 'A Desktop Application for Racing and Plane Simulator to Improve Efficiency and Productivity of Racing and Plane Services.',
-    }
-  ]
+export const mainProjectData = [
+  {
+    id: 1,
+    url: "https://fmri-ai.com/",
+    image: "/images/Ai Erp Tools.png",
+    title: "FMRI-AI Research Suite",
+    year: "2025",
+    company: "FMRI Research and Analytics",
+    techstacks:
+      "Techstacks:Typescript,React.js,Next.js,Ant Design,Mob X, Zod, Tanstack Query,Node.js,PostgreSQL,Sequelize,AI-SDK,Minio,AWS,Docker,Git",
+    description:
+      "An Enterprise-level AI Integration Tools for Marketing Research Business to Improve Efficiency and Productivity.",
+  },
+  {
+    id: 2,
+    url: "",
+    image: "/images/MonitoringIncubator.jpg",
+    title: "Monitoring Incubator",
+    year: "2025",
+    company: "PT Poly Jaya Medical",
+    techstacks:
+      "Techstacks:Javascript,React.js,Vite,Material UI,Redux Toolkit, Zod, axios,Node.js,Express.js,MySQL,Sequelize,Git",
+    description:
+      "A Web Application for Monitoring Incubator Device Data to Improve Displaying and Visualizing Incubator Device Data more Efficiently and Flexible.",
+  },
+  {
+    id: 3,
+    url: "",
+    image: "/images/HIS.jpg",
+    title: "HIS(Hospital Information System)",
+    year: "2023",
+    company: "PT Poly Jaya Medical",
+    techstacks:
+      "Techstacks:Typescript,React.js,Next.js,Material UI,Redux Toolkit, Zod, axios,Node.js,Express.js,PostgreSQL ,Prisma,Git",
+    description:
+      "A Web Application for Hospital Outpatient Management System to Improve Efficiency and Productivity of Outpatient Clinic/Hospital Services.",
+  },
+  {
+    id: 4,
+    url: "",
+    image: "",
+    title: "Racing and Plane Simulator",
+    year: "2023",
+    company: "PT Poly Jaya Medical",
+    techstacks: "Techstacks:C#, Windows Form, WPF",
+    description:
+      "A Desktop Application for Racing and Plane Simulator to Improve Efficiency and Productivity of Racing and Plane Services.",
+  },
+];
 export const projectData = [
   {
     id: 1,
@@ -133,7 +140,8 @@ export const projectData = [
     url: "https://chilimovies.vercel.app/",
     source: "https://github.com/Sabd98/chill-movie-app",
     title: "Chill Movie App",
-    techstacks: "Techstacks:React.js,Vite,Tailwind CSS, Vanilla Css, Rtk Query, Redux, Framer-Motion, Firebase API",
+    techstacks:
+      "Techstacks:React.js,Vite,Tailwind CSS, Vanilla Css, Rtk Query, Redux, Framer-Motion, Firebase API",
   },
   {
     id: 5,
@@ -230,7 +238,8 @@ export const projectData = [
     url: "https://multistep-bloggy-creator.vercel.app/",
     source: "https://github.com/Sabd98/bloggy-fe-test",
     title: "Bloggy Multisteps",
-    techstacks: "Techstacks:Typescript,React.js,Next.js,Tailwindcss,Sass,Zustand,axios,zod, Material UI",
+    techstacks:
+      "Techstacks:Typescript,React.js,Next.js,Tailwindcss,Sass,Zustand,axios,zod, Material UI",
   },
   {
     id: 16,
@@ -314,66 +323,85 @@ export const projectData = [
   },
 ];
 
-export const skillsData = [
+export type Skill = {
+  id: number;
+  source: string;
+  title: string;
+  image: string;
+  category: "frontend" | "backend" | "db" | "devops";
+  percent?: string;
+};
+
+export const skillsData: Skill[] = [
   {
     id: 1,
     source: "https://developer.mozilla.org/en-US/docs/Web/HTML",
     title: "HTML",
     image: "/images/html.svg",
+    category: "frontend",
   },
   {
     id: 2,
     source: "https://developer.mozilla.org/en-US/docs/Web/CSS",
     title: "CSS",
     image: "/images/css.svg",
+    category: "frontend",
   },
   {
     id: 3,
     source: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
     title: "JavaScript",
     image: "/images/js.svg",
+    category: "frontend",
   },
   {
     id: 4,
     source: "https://www.typescriptlang.org/",
     title: "TypeScript",
     image: "/images/ts.svg",
+    category: "frontend",
   },
   {
     id: 5,
     source: "https://react.dev/",
     title: "React",
     image: "/images/react.svg",
+    category: "frontend",
   },
   {
     id: 6,
     source: "https://nodejs.org/en",
     title: "Node JS",
     image: "/images/node.svg",
+    category: "backend",
   },
   {
     id: 7,
-    source: "https://www.mysql.com/",
-    title: "MySQL",
-    image: "/images/mysql.svg",
+    source: "https://nextjs.org/",
+    title: "NextJS",
+    image: "/images/next.svg",
+    category: "frontend",
   },
   {
     id: 8,
-    source: "https://www.postgresql.org/",
-    title: "PostgreSQL",
-    image: "/images/postgresql.svg",
+    source: "https://expressjs.com/",
+    title: "ExpressJS",
+    image: "/images/Express.svg",
+    category: "backend",
   },
   {
     id: 9,
     source: "https://jquery.com/",
     title: "jQuery",
     image: "/images/jquery.svg",
+    category: "frontend",
   },
   {
     id: 10,
     source: "https://git-scm.com/",
     title: "Git",
     image: "/images/git.svg",
+    category: "devops",
   },
   {
     id: 11,
@@ -381,36 +409,70 @@ export const skillsData = [
     title: "Tailwind",
     image: "/images/tailwind.svg",
     percent: "70%",
+    category: "frontend",
   },
   {
     id: 12,
     source: "https://vuejs.org/",
     title: "Vue",
     image: "/images/vue.svg",
+    category: "frontend",
   },
   {
     id: 13,
-    source: "https://nextjs.org/",
-    title: "NextJS",
-    image: "/images/next.svg",
+    source: "https://www.mysql.com/",
+    title: "MySQL",
+    image: "/images/mysql.svg",
+    category: "db",
   },
   {
     id: 14,
-    source: "https://expressjs.com/",
-    title: "ExpressJS",
-    image: "/images/Express.svg",
+    source: "https://www.postgresql.org/",
+    title: "PostgreSQL",
+    image: "/images/postgresql.svg",
+    category: "db",
   },
   {
     id: 15,
     source: "https://golang.org/",
     title: "Golang",
     image: "/images/Go.svg",
+    category: "backend",
   },
   {
     id: 16,
     source: "https://www.docker.com/",
     title: "Docker",
     image: "/images/docker.svg",
+    category: "devops",
+  },
+  {
+    id: 17,
+    source: "https://www.php.net/",
+    title: "PHP",
+    image: "/images/php.svg",
+    category: "backend",
+  },
+  {
+    id: 18,
+    source: "https://laravel.com/",
+    title: "Laravel",
+    image: "/images/Laravel.svg",
+    category: "backend",
+  },
+   {
+    id: 19,
+    source: "https://nestjs.com/",
+    title: "NestJS",
+    image: "/images/nestjs.svg",
+    category: "backend",
+  },
+  {
+    id: 20,
+    source: "https://www.linux.org/",
+    title: "Linux",
+    image: "/images/linux.svg",
+    category: "devops",
   },
 ];
 
