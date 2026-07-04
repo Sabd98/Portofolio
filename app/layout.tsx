@@ -19,6 +19,9 @@ const font = Public_Sans({
 export const metadata: Metadata = {
   title: "Sabda's Portofolio",
   description: "By Sabda Avicenna",
+   icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
