@@ -414,6 +414,11 @@ export const skillsData = [
   },
 ];
 
+export const quoteInfo = {
+  text: "Always bet on JavaScript",
+  author: "Brendan Eich",
+};
+
 export const contactData = {
   phone: "+6285894189223",
   email: "sabdaavicennaa@gmail.com",

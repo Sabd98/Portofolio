@@ -25,6 +25,7 @@ import {
 } from "@mui/material";
 import { Icon } from "@iconify/react";
 import TypewriterText from "@/components/Helper/TypewriterText";
+import { QuoteSection } from "@/components/Helper/QuoteSection";
 
 export const About = () => {
   const [expanded, setExpanded] = useState<string | false>(false);
@@ -317,6 +318,7 @@ export const About = () => {
             </Box>
           </Box>
         </Box>
+        <QuoteSection />
       </Container>
     </section>
   );
