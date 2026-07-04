@@ -2,7 +2,7 @@
 import { useTheme } from "@/components/Helper/ThemeContext";
 import { navLinks } from "@/constant/navs";
 import { Icon } from "@iconify/react/dist/iconify.js";
-import { Button, FormControlLabel, Switch } from "@mui/material";
+import { Button, Switch } from "@mui/material";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
@@ -101,16 +101,46 @@ export const Nav = ({ openNav, activeId, isHomeRoute }: Props) => {
             </Button>
           </Link>
 
-          <FormControlLabel
-            control={
-              <Switch
-                checked={theme === "dark"}
-                onChange={toggleTheme}
-                sx={{ m: 1 }}
-              />
-            }
-            className="font-semibold dark:text-slate-50"
-            label={theme === "dark" ? "Dark" : "Light"}
+          <Switch
+            checked={theme === "dark"}
+            onChange={toggleTheme}
+            sx={{
+              m: 1,
+              width: 62,
+              height: 34,
+              "& .MuiSwitch-switchBase": {
+                padding: 0,
+                "&.Mui-checked": {
+                  transform: "translateX(22px)",
+                },
+                "& .MuiSwitch-thumb": {
+                  width: 28,
+                  height: 28,
+                  transition: "background-color 0.2s ease",
+                  "&::before": {
+                    content: "''",
+                    position: "absolute",
+                    width: "100%",
+                    height: "100%",
+                    left: 0,
+                    top: 0,
+                    backgroundRepeat: "no-repeat",
+                    backgroundPosition: "center",
+                    backgroundImage: `url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2220%22 height=%2220%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22%23001e3c%22 stroke-width=%222%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22><circle cx=%2212%22 cy=%2212%22 r=%224%22/><path d=%22M12 2v2%22/><path d=%22M12 20v2%22/><path d=%22m4.93 4.93 1.41 1.41%22/><path d=%22m17.66 17.66 1.41 1.41%22/><path d=%22M2 12h2%22/><path d=%22M20 12h2%22/><path d=%22m6.34 17.66-1.41 1.41%22/><path d=%22m19.07 4.93-1.41 1.41%22/></svg>')`,
+                  },
+                },
+                "&.Mui-checked .MuiSwitch-thumb": {
+                  "&::before": {
+                    backgroundImage: `url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2220%22 height=%2220%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22%23fff%22 stroke-width=%222%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22><path d=%22M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z%22/></svg>')`,
+                  },
+                },
+              },
+              "& .MuiSwitch-track": {
+                opacity: 1,
+                backgroundColor: "#aab4be",
+                borderRadius: 16,
+              },
+            }}
           />
         </div>
       </div>
