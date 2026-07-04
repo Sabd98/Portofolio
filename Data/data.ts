@@ -328,7 +328,7 @@ export type Skill = {
   source: string;
   title: string;
   image: string;
-  category: "frontend" | "backend" | "db" | "devops";
+  category: "language" | "frontend" | "backend" | "other";
   percent?: string;
 };
 
@@ -352,14 +352,14 @@ export const skillsData: Skill[] = [
     source: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
     title: "JavaScript",
     image: "/images/js.svg",
-    category: "frontend",
+    category: "language",
   },
   {
     id: 4,
     source: "https://www.typescriptlang.org/",
     title: "TypeScript",
     image: "/images/ts.svg",
-    category: "frontend",
+    category:"language",
   },
   {
     id: 5,
@@ -401,7 +401,7 @@ export const skillsData: Skill[] = [
     source: "https://git-scm.com/",
     title: "Git",
     image: "/images/git.svg",
-    category: "devops",
+    category: "other",
   },
   {
     id: 11,
@@ -423,35 +423,35 @@ export const skillsData: Skill[] = [
     source: "https://www.mysql.com/",
     title: "MySQL",
     image: "/images/mysql.svg",
-    category: "db",
+    category: "other",
   },
   {
     id: 14,
     source: "https://www.postgresql.org/",
     title: "PostgreSQL",
     image: "/images/postgresql.svg",
-    category: "db",
+    category: "other",
   },
   {
     id: 15,
     source: "https://golang.org/",
     title: "Golang",
     image: "/images/Go.svg",
-    category: "backend",
+    category: "language",
   },
   {
     id: 16,
     source: "https://www.docker.com/",
     title: "Docker",
     image: "/images/docker.svg",
-    category: "devops",
+    category: "other",
   },
   {
     id: 17,
     source: "https://www.php.net/",
     title: "PHP",
     image: "/images/php.svg",
-    category: "backend",
+    category: "language",
   },
   {
     id: 18,
@@ -472,7 +472,21 @@ export const skillsData: Skill[] = [
     source: "https://www.linux.org/",
     title: "Linux",
     image: "/images/linux.svg",
-    category: "devops",
+    category: "other",
+  },
+  {
+    id: 21,
+    source: "https://gin-gonic.com/",
+    title: "Gin",
+    image: "/images/gin.svg",
+    category: "backend",
+  },
+  {
+    id: 22,
+    source: "https://www.jenkins.io/",
+    title: "CI/CD",
+    image: "/images/cicd.svg",
+    category: "backend",
   },
 ];
 

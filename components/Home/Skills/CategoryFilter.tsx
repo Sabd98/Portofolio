@@ -4,10 +4,10 @@ import { FormControl, InputLabel, MenuItem, Select, SelectChangeEvent } from "@m
 
 const CATEGORIES = [
   { value: "all", label: "All" },
+  { value: "language", label: "Language" },
   { value: "frontend", label: "Frontend" },
   { value: "backend", label: "Backend" },
-  { value: "db", label: "DB" },
-  { value: "devops", label: "DevOps" },
+  { value: "other", label: "Other" }
 ];
 
 interface CategoryFilterProps {
