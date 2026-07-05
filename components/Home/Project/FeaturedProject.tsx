@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { Box, Container, Grid } from "@mui/material";
 import { FadeInSectionY } from "@/components/Helper/FadeInSectionY";
 import { SectionHeading } from "@/components/Helper/Helper";
@@ -8,9 +8,23 @@ import { mainProjectData } from "@/Data/data";
 import { FeaturedProjectCard } from "./FeaturedProjectCard";
 import { ProjectModal } from "./ProjectModal";
 
+import { YearFilter } from "./YearFilter";
+
 export const FeaturedProject = () => {
   const [selectedProject, setSelectedProject] = useState<any | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedYear, setSelectedYear] = useState("all");
+
+  const filteredProjects = useMemo(
+    () =>
+      selectedYear === "all"
+        ? mainProjectData
+        : mainProjectData.filter((p) => {
+            const years = (p.year || "").split("-");
+            return years.some((y) => y.trim() === selectedYear);
+          }),
+    [selectedYear]
+  );
 
   const handleInfoClick = (project: any) => {
     setSelectedProject(project);
@@ -34,9 +48,13 @@ export const FeaturedProject = () => {
       <Container maxWidth="xl">
         <SectionHeading>Featured Projects</SectionHeading>
 
+        <Box sx={{ display: "flex", justifyContent: "center", mb: 3 }}>
+          <YearFilter selected={selectedYear} onChange={setSelectedYear} />
+        </Box>
+
         <FadeInSectionY>
           <Grid container spacing={6}>
-            {mainProjectData.map((project) => (
+            {filteredProjects.map((project) => (
               <Grid item xs={12} md={6} lg={4} key={project.id}>
                 <FeaturedProjectCard
                   project={project}
