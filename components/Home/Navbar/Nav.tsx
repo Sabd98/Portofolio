@@ -1,5 +1,5 @@
 "use client";
-import { useTheme } from "@/components/Helper/ThemeContext";
+import { useTheme } from "@/components/Shared/ThemeContext";
 import { navLinks } from "@/constant/navs";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { Button, Switch } from "@mui/material";

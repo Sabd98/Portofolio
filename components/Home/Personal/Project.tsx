@@ -9,12 +9,11 @@ import {
   Chip,
   Typography,
 } from "@mui/material";
-import { FadeInSectionY } from "@/components/Helper/FadeInSectionY";
-import { SectionHeading } from "@/components/Helper/Helper";
-import { skillsData } from "@/Data/data";
+import { FadeInSectionY } from "@/components/Shared/FadeInSectionY";
+import { SectionHeading } from "@/components/Shared/SectionHeading";
 import { ProjectCard } from "./ProjectCard";
 import Link from "next/link";
-import { TechStackList } from "../../Helper/TechstackList";
+import { TechStackList } from "../../Shared/TechstackList";
 import { getVisibleSkills } from "./filterProjects";
 import { filterProjectsBySkills } from "./filterProjects";
 

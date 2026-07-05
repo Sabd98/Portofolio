@@ -1,6 +1,6 @@
 "use client";
 
-import { mainProjectData } from "@/Data/data";
+import { mainProjectData } from "@/data/data";
 import { FormControl, InputLabel, MenuItem, Select, SelectChangeEvent } from "@mui/material";
 
 // Extract unique years from mainProjectData, splitting ranges like "2025-2026"

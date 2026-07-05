@@ -1,7 +1,7 @@
-import { FadeInSectionLeft } from "@/components/Helper/FadeInSectionLeft";
-import { FadeInSectionRight } from "@/components/Helper/FadeInSectionRight";
-import { SectionHeading } from "@/components/Helper/Helper";
-import { contactData } from "@/Data/data";
+import { FadeInSectionLeft } from "@/components/Shared/FadeInSectionLeft";
+import { FadeInSectionRight } from "@/components/Shared/FadeInSectionRight";
+import { SectionHeading } from "@/components/Shared/SectionHeading";
+import { contactData } from "@/data/data";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import Link from "next/link";
 import React from "react";

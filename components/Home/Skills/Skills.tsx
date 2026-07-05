@@ -1,10 +1,10 @@
 "use client";
 
-import { SectionHeading } from "@/components/Helper/Helper";
-import { skillsData, Skill } from "@/Data/data";
+import { SectionHeading } from "@/components/Shared/SectionHeading";
+import { skillsData, Skill } from "@/data/data";
 import React, { useState } from "react";
 import { SkillCard } from "./SkillCard";
-import { FadeInSectionY } from "@/components/Helper/FadeInSectionY";
+import { FadeInSectionY } from "@/components/Shared/FadeInSectionY";
 import { CategoryFilter } from "./CategoryFilter";
 import { Box } from "@mui/material";
 

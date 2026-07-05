@@ -1,4 +1,4 @@
-import { projectData, skillsData } from "@/Data/data";
+import { projectData, skillsData } from "@/data/data";
 
 // Strip spaces, dots, and lowercase for robust substring matching
 function key(text: string) {

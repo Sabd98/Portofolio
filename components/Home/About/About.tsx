@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { FadeInSectionLeft } from "@/components/Helper/FadeInSectionLeft";
-import { FadeInSectionRight } from "@/components/Helper/FadeInSectionRight";
-import { FadeInSectionY } from "@/components/Helper/FadeInSectionY";
-import { SectionHeading } from "@/components/Helper/Helper";
-import { aboutInfo, timelineInfo } from "@/Data/data";
+import { FadeInSectionLeft } from "@/components/Shared/FadeInSectionLeft";
+import { FadeInSectionRight } from "@/components/Shared/FadeInSectionRight";
+import { FadeInSectionY } from "@/components/Shared/FadeInSectionY";
+import { SectionHeading } from "@/components/Shared/SectionHeading";
+import { aboutInfo, timelineInfo } from "@/data/data";
 import {
   Timeline,
   TimelineItem,
@@ -24,8 +24,8 @@ import {
   Chip,
 } from "@mui/material";
 import { Icon } from "@iconify/react";
-import TypewriterText from "@/components/Helper/TypewriterText";
-import { QuoteSection } from "@/components/Helper/QuoteSection";
+import TypewriterText from "@/components/Shared/TypewriterText";
+import { QuoteSection } from "@/components/Shared/QuoteSection";
 
 export const About = () => {
   const [expanded, setExpanded] = useState<string | false>(false);

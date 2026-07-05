@@ -1,5 +1,5 @@
-import { FadeInSectionY } from "@/components/Helper/FadeInSectionY";
-import { quoteInfo } from "@/Data/data";
+import { FadeInSectionY } from "@/components/Shared/FadeInSectionY";
+import { quoteInfo } from "@/data/data";
 import { Box, Container, Typography } from "@mui/material";
 
 export const QuoteSection = () => {

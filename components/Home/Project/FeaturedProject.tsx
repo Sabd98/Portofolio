@@ -2,9 +2,9 @@
 
 import { useState, useMemo } from "react";
 import { Box, Container, Grid } from "@mui/material";
-import { FadeInSectionY } from "@/components/Helper/FadeInSectionY";
-import { SectionHeading } from "@/components/Helper/Helper";
-import { mainProjectData } from "@/Data/data";
+import { FadeInSectionY } from "@/components/Shared/FadeInSectionY";
+import { SectionHeading } from "@/components/Shared/SectionHeading";
+import { mainProjectData } from "@/data/data";
 import { FeaturedProjectCard } from "./FeaturedProjectCard";
 import { ProjectModal } from "./ProjectModal";
 

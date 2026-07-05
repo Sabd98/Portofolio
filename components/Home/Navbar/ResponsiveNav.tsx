@@ -3,7 +3,7 @@
 import { MobileNav } from "./MobileNav"
 import { Nav } from "./Nav"
 import { useState } from 'react';
-import { useActiveSection } from "@/components/Helper/useActiveSection";
+import { useActiveSection } from "@/hooks/useActiveSection";
 import { usePathname } from "next/navigation";
 import { HOME_IDS } from "@/constant/navs";
 

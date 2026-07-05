@@ -11,7 +11,7 @@ import {
   Divider,
 } from "@mui/material";
 import { Icon } from "@iconify/react";
-import { TechStackList } from "../../Helper/TechstackList";
+import { TechStackList } from "../../Shared/TechstackList";
 
 type Project = {
   id: number;

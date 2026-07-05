@@ -1,10 +1,9 @@
-import { FadeInSectionLeft } from "@/components/Helper/FadeInSectionLeft";
-import { FadeInSectionRight } from "@/components/Helper/FadeInSectionRight";
-import { FadeInSectionY } from "@/components/Helper/FadeInSectionY";
-import { BaseInfo } from "@/Data/data";
+import { FadeInSectionLeft } from "@/components/Shared/FadeInSectionLeft";
+import { FadeInSectionRight } from "@/components/Shared/FadeInSectionRight";
+import { BaseInfo } from "@/data/data";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { Button } from "@mui/material";
-import { TypewriterText } from "@/components/Helper/TypewriterText";
+import { TypewriterText } from "@/components/Shared/TypewriterText";
 import Image from "next/image";
 
 export const Hero = () => {
