@@ -113,8 +113,11 @@ bun run lint
 The repository ships with a `Dockerfile` (multi-stage: Bun builder → Node 20 Alpine runner) and a `build.sh` helper.
 
 ```bash
-# One-liner: build image + run container (port 3000)
-./build.sh
+# One-liner: build image + run container (port 3000) in local
+./build.sh local
+
+# build image + run container (port 3000) in vps/cloud domain
+./build.sh vps
 
 # Or step by step
 docker build -t portofolio .
