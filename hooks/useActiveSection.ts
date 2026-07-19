@@ -44,6 +44,12 @@ export function useActiveSection(sectionIds: string[]): string {
         best = ids[i];
       }
     }
+    // If scrolled near the bottom of the page, always mark the last section active
+    const scrollBottom = window.scrollY + window.innerHeight;
+    const docHeight = document.documentElement.scrollHeight;
+    if (docHeight - scrollBottom < 100) {
+      best = ids[ids.length - 1];
+    }
     setActiveId(best);
   }, []);
 
@@ -59,7 +65,11 @@ export function useActiveSection(sectionIds: string[]): string {
 
     // Listen to scroll for active section updates
     window.addEventListener("scroll", computeActive, { passive: true });
-    return () => window.removeEventListener("scroll", computeActive);
+    window.addEventListener("resize", computeActive, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", computeActive);
+      window.removeEventListener("resize", computeActive);
+    };
   }, [computeActive]);
 
   return activeId;
