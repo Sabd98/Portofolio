@@ -288,7 +288,7 @@ export const projectData = [
   {
     id: 21,
     image: "/images/p21.png",
-    url: "https://cms-admin-fawn.vercel.app/login",
+    url: "https://cms-admin-fawn.vercel.app/",
     source: "https://github.com/Sabd98/cms-dashboard-test",
     title: "CMS Admin",
     techstacks:
@@ -305,12 +305,12 @@ export const projectData = [
   },
   {
     id: 23,
-    image: "",
-    url: "https://github.com/Sabd98/chill-api",
-    source: "https://github.com/Sabd98/chill-api",
-    title: "Chill Movies API",
+    image: "/images/p23.png",
+    url: "https://autp-simulation.vercel.app/",
+    source: "https://github.com/Sabd98/autp_test",
+    title: "AUTP Simulation",
     techstacks:
-      "Techstacks:Javaascript, Node.js, Express.js, Mysql, Multer, Nodemailer, Bcrypt",
+      "Techstacks:Typescript, React.js, Next.js, ShadCN, Tailwind CSS, axios, Zustand, PHP, Laravel, EloquentORM, PostgreSQL",
   },
   {
     id: 24,
@@ -320,6 +320,15 @@ export const projectData = [
     title: "Ai-Open Platform",
     techstacks:
       "Techstacks:Typescript,React.js,Next.js,Tailwindcss,ExpressJs,Cookie,axios,Zustand,Ant Design,Ai-sdk,Postgre,Sequelize,Zod",
+  },
+  {
+    id: 25,
+    image: "/images/p25.png",
+    url: "https://voicescript-simulation.vercel.app/",
+    source: "https://github.com/Sabd98/court_app_test",
+    title: "Voicescript Simple Report App",
+    techstacks:
+      "Techstacks:Typescript, React.js, Next.js, ShadCN, Tailwind CSS, axios, Zustand, Node.js, Nest.js, Prisma, PostgreSQL",
   },
 ];
 
