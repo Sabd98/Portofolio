@@ -1,81 +1,66 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
-export function useActiveSection(sectionIds: string[]) {
+/** Estimate the combined nav + progress bar height in pixels. */
+function getNavHeight(): number {
+  const nav = document.querySelector(".nav_main") as HTMLElement | null;
+  const progress = document.querySelector(".scroll-progress") as HTMLElement | null;
+  const navH = nav?.offsetHeight ?? 0;
+  const progH = progress?.offsetHeight ?? 0;
+  if (navH + progH > 0) return navH + progH;
+  try {
+    const navEl = document.createElement("div");
+    navEl.style.position = "fixed";
+    navEl.style.height = "var(--vh, 1vh)";
+    navEl.style.top = "0";
+    document.body.appendChild(navEl);
+    const vh = navEl.offsetHeight;
+    document.body.removeChild(navEl);
+    return Math.round(vh * 10) + 3;
+  } catch {
+    return 48;
+  }
+}
+
+export function useActiveSection(sectionIds: string[]): string {
   const [activeId, setActiveId] = useState(() => sectionIds[0] ?? "");
+  const sectionIdsRef = useRef(sectionIds);
 
-  // Seed activeId from URL hash on mount
+  // Keep ref in sync whenever sectionIds change (e.g. different pages)
   useEffect(() => {
-    const hash = window.location.hash.slice(1);
-    if (hash) {
-      const valid = sectionIds.find((id) => id === hash);
-      if (valid) setActiveId(valid);
-    } else {
-      // If no hash, use scroll position to seed (accounts for header offset)
-      const HEADER_OFFSET = 48;
-      let best = sectionIds[0];
-      for (const id of sectionIds) {
-        const el = document.getElementById(id);
-        if (el && el.offsetTop <= window.scrollY + HEADER_OFFSET) {
-          best = id;
-        }
+    sectionIdsRef.current = sectionIds;
+  }, [sectionIds]);
+
+  // Compute the first visible section from scrollY
+  const computeActive = useCallback(() => {
+    const ids = sectionIdsRef.current;
+    if (!ids.length) return;
+    const navOffset = getNavHeight();
+    let best = ids[0];
+    for (let i = 0; i < ids.length; i++) {
+      const el = document.getElementById(ids[i]);
+      if (el && el.offsetTop <= window.scrollY + navOffset) {
+        best = ids[i];
       }
-      setActiveId(best);
     }
+    setActiveId(best);
   }, []);
 
+  // One single effect: set initial state + listen to scroll
   useEffect(() => {
-    const els = sectionIds
-      .map((id) => document.getElementById(id))
-      .filter(Boolean) as HTMLElement[];
-    if (els.length === 0) return;
+    // Seed from hash or scroll position on mount
+    const hash = window.location.hash.slice(1);
+    if (hash && sectionIds.includes(hash)) {
+      setActiveId(hash);
+    } else {
+      computeActive();
+    }
 
-    // Header offset: fixed nav + scroll progress bar height
-    const HEADER_OFFSET = 48;
-
-    const obs = new IntersectionObserver(
-      (entries) => {
-        // Pick the section closest to (but above) the viewport top minus header offset
-        // This is the standard scroll-spy algorithm
-        let best: { target: string; offsetTop: number } | null = null;
-
-        for (const e of entries) {
-          if (!e.isIntersecting) continue;
-          const el = e.target as HTMLElement;
-          const elTop = el.offsetTop;
-          const viewTop = window.scrollY + HEADER_OFFSET;
-
-          // Among sections whose top is at/below viewTop, pick the first one (closest to scroll position)
-          if (elTop >= viewTop - 200) {
-            if (!best || elTop < best.offsetTop) {
-              best = { target: el.id, offsetTop: elTop };
-            }
-          }
-        }
-
-        // If no section starts in/near viewport (edge case), use largest ratio
-        if (!best) {
-          let bestRatio: { target: string; ratio: number; offsetTop?: number } | null = null;
-          for (const e of entries) {
-            if (!e.isIntersecting) continue;
-            if (!bestRatio || e.intersectionRatio > bestRatio.ratio) {
-              bestRatio = { target: e.target.id, ratio: e.intersectionRatio };
-            }
-          }
-          if (bestRatio) {
-            best = { target: bestRatio.target, offsetTop: bestRatio.offsetTop ?? 0 };
-            setActiveId(bestRatio.target);
-          }
-        }
-
-        if (best) setActiveId(best.target);
-      },
-      { threshold: [0, 0.25, 0.5, 0.75, 1] }
-    );
-    els.forEach((el) => obs.observe(el));
-    return () => obs.disconnect();
-  }, [sectionIds.join(",")]);
+    // Listen to scroll for active section updates
+    window.addEventListener("scroll", computeActive, { passive: true });
+    return () => window.removeEventListener("scroll", computeActive);
+  }, [computeActive]);
 
   return activeId;
 }

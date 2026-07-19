@@ -37,7 +37,7 @@
 
 
   [id] {
-    scroll-margin-top: 15vh;
+    scroll-margin-top: calc(10vh + 3px);
   }
 
   .nav_content .button {

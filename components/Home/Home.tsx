@@ -5,18 +5,14 @@ import { Hero } from "./Hero/Hero";
 import { About } from "./About/About";
 import { Skills } from "./Skills/Skills";
 import { Contact } from "./Contact/Contact";
-import { useActiveSection } from "@/hooks/useActiveSection";
 import { HOME_IDS } from "@/constant/navs";
 
-
 export const Home = () => {
-  const activeId = useActiveSection(HOME_IDS);
-
   return (
     <>
       <div>
         {HOME_IDS.map((id) => (
-          <div key={id} id={id} data-section-active={id === activeId}><HomeChildren id={id} /></div>
+          <div key={id} id={id}><HomeChildren id={id} /></div>
         ))}
       </div>
     </>
