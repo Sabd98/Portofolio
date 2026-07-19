@@ -116,7 +116,7 @@ export const projectData = [
     url: "https://dice-simulator-nu.vercel.app/",
     source: "https://github.com/Sabd98/Dice_Simulator",
     title: "Dice Simulator",
-    techstacks: "Techstacks:Vanilla JS,Vite,Vanilla CSS",
+    techstacks: "Techstacks:Javascript,Vite,CSS",
   },
   {
     id: 2,
@@ -124,7 +124,7 @@ export const projectData = [
     url: "https://taskmaster-pro-two.vercel.app/",
     source: "https://github.com/Sabd98/simple-task-master",
     title: "Task Master App",
-    techstacks: "Techstacks:jQuery,Vanilla CSS, Tailwind Css",
+    techstacks: "Techstacks:jQuery,CSS, Tailwind Css",
   },
   {
     id: 3,
@@ -132,7 +132,7 @@ export const projectData = [
     url: "https://test-tic-tac-toe-one.vercel.app/",
     source: "https://github.com/Sabd98/tic-tac-toe",
     title: "Test Tic-Tac-Toe",
-    techstacks: "Techstacks:React.js,Vite,Vanilla CSS",
+    techstacks: "Techstacks:React.js,Vite,CSS",
   },
   {
     id: 4,
@@ -141,7 +141,7 @@ export const projectData = [
     source: "https://github.com/Sabd98/chill-movie-app",
     title: "Chill Movie App",
     techstacks:
-      "Techstacks:React.js,Vite,Tailwind CSS, Vanilla Css, Rtk Query, Redux, Framer-Motion, Firebase API",
+      "Techstacks:React.js,Vite,Tailwind CSS, CSS, Rtk Query, Redux, Framer-Motion, Firebase API",
   },
   {
     id: 5,
@@ -486,7 +486,7 @@ export const skillsData: Skill[] = [
     source: "https://www.jenkins.io/",
     title: "CI/CD",
     image: "/images/cicd.svg",
-    category: "backend",
+    category: "other",
   },
 ];
 
